@@ -3,17 +3,20 @@
     require 'functions.php';
     require 'message.php';
     require 'database.php';
+    require 'config.php';         
 
     session_start();
 
     if(!isset($_SESSION['vars'])) $_SESSION['vars'] = $CLEARSESSIONVARS;
 
     $msg = new Message();
+    $config = new Config();
+    require 'vars.php';
     $db = new Database([
-        'host' => 'diplom.local',
-        'user' => 'root',
-        'password' => 'root',
-        'database' => 'diplom.local'
+        'host' => $config->database_host,
+        'user' => $config->database_user,
+        'password' => $config->database_password,
+        'database' => $config->database_name
     ]);
 
     $method = strtolower($_SERVER['REQUEST_METHOD']);

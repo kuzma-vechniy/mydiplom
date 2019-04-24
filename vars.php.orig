@@ -1,0 +1,8 @@
+<?
+
+$config->set_vars([
+    'database_host' => 'diplom.local',
+    'atabase_user' => 'root',
+    'database_password' => 'root',
+    'database_name' => 'diplom.local'
+]);

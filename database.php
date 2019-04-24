@@ -11,7 +11,7 @@
 
         function __construct($array){
 
-            $this->file = fopen("logs.txt", 'a+');
+            $this->file = fopen("local/logs.txt", 'a+');
             fwrite($this->file, '========'.PHP_EOL);
             $this->mysqli = new mysqli($array['host'], $array['user'], $array['password'], $array['database']);
             if (mysqli_connect_errno()) {
