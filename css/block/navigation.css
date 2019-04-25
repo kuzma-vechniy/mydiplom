@@ -1,0 +1,46 @@
+.navigation{
+width:100%;
+display:flex;
+align-items: center;
+}
+
+.navigation__dark{
+    background-color: #444;
+}
+
+.navigation--list{
+display: flex;
+list-style-type:none;
+width: 1000px;
+justify-content:space-around;
+margin: auto; 
+align-items: center;
+}
+
+.navigation--item{
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation--link{
+text-decoration: none;
+font-family: "Roboto";
+color:#444;
+}
+
+.navigation__dark .navigation--link{
+    color: #eee;
+}
+
+.navigation--link:hover{
+    color:#E89A48;
+}
+
+.navigation--text{
+    font-family: "Roboto";
+    color:#444;
+}
+
+.navigation--img{
+
+}
