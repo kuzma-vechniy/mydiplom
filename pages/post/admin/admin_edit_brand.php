@@ -6,5 +6,6 @@
             'name' => $_POST['name']
         ])->find_by(['id' => $brand->id])->execute();
 
-        redirect(page_url('admin_edit_brand', ['brand_id' => $brand->id]));
+        if( $db->from('brands')->find_by(['id' => $brand->id])->execute()->result()->name === $_POST['name']) redirect(page_url('admin_brands'));
+        else redirect(page_url('admin_edit_brand', ['brand_id' => $brand->id]));
     ?>

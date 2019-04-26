@@ -5,6 +5,7 @@
      ?>
     <body>
         <? template('admin_header'); ?>
+        <a href="<?= page_url('admin_new_brand') ?>">New</a>
         <table>
             <thead>
                 <tr>
