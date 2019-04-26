@@ -74,6 +74,18 @@
             return $this;
         }
 
+        function order($param){
+            $this->query .= "order by ".$param." ";
+            return $this;
+        }
+
+        function limit($param){
+            if($param == 1) $this->answer_type = 'single';
+            else $this->answer_type = 'multiple';
+            $this->query .= "limit ".$param;
+            return $this;
+        }
+
         function query(){
             return $this->query;
         }
