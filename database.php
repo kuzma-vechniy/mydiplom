@@ -27,6 +27,11 @@
             return $this;
         }
 
+        function delete($table){
+            $this->query .= "DELETE FROM `".$table."` ";
+            return $this;
+        }
+
         function update($table){
             $this->query .= "UPDATE `".$table."` ";
             return $this;

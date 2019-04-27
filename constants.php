@@ -39,7 +39,8 @@
             'admin_questions' => [$ADMIN],
             'admin_users' => [$ADMIN],
             'admin_edit_brand' => [$ADMIN],
-            'admin_new_brand' => [$ADMIN]
+            'admin_new_brand' => [$ADMIN],
+            'admin_delete_brand' => [$ADMIN]
         ]
     ];
 
