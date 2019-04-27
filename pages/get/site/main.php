@@ -1,4 +1,9 @@
 <? $categories = $db->from('categories')->where(['category_id' => '0'])->execute()->result(); ?>
+<? 
+    foreach($categories as $category){
+        $category->categories = $db->from('categories')->where(['category_id' => $category->id])->execute()->result();
+    }
+?>
 
 <html>
     <? $title = 'Главная' ?>
@@ -13,49 +18,24 @@
                 Категории
             </h2>
             <ul class="category--list">
-                <li class="category--item">
-                    <a href="#" class="category--link">
-                        Категория
-                    </a>
-                    <article class="category category__sub">
-                        <ul class="category--list">
-                            <li class="category--item">
-                                <a class="category--link" href="#">
-                                    Субкатегория
-                                </a>
-                            </li>
-                            <li class="category--item">
-                                <a class="category--link" href="#">
-                                    Субкатегория 2
-                                </a>
-                            </li>
-                        </ul>
-                    </article>
-                </li>
-                <li class="category--item">
-                    <a href="#" class="category--link">
-                        Категория
-                    </a>
-                    <article class="category category__sub">
-                        <ul class="category--list">
-                            <li class="category--item">
-                                <a class="category--link" href="#">
-                                    Субкатегория 3
-                                </a>
-                            </li>
-                            <li class="category--item">
-                                <a class="category--link" href="#">
-                                    Субкатегория 4
-                                </a>
-                            </li>
-                        </ul>
-                    </article>
-                </li>
                 <? foreach($categories as $category){?>
                     <li class="category--item">
                         <a class="category--link" href="<?= page_url('category', ['category_id' => $category->id]) ?>">
                             <?= $category->name ?>
                         </a>
+                        <? if($category->categories != []){ ?>
+                            <article class="category category__sub">
+                                <ul class="category--list">
+                                    <? foreach($category->categories as $sub_category){ ?>
+                                        <li class="category--item">
+                                            <a class="category--link" href="<?= page_url('category', ['category_id' => $sub_category->id]) ?>">
+                                                <?= $sub_category->name ?>
+                                            </a>
+                                        </li>
+                                    <? } ?>
+                                </ul>
+                            </article>
+                        <? } ?>
                     </li>
                 <? } ?>            
             </ul>     
