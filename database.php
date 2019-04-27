@@ -27,6 +27,11 @@
             return $this;
         }
 
+        function delete($table){
+            $this->query .= "DELETE FROM `".$table."` ";
+            return $this;
+        }
+
         function update($table){
             $this->query .= "UPDATE `".$table."` ";
             return $this;
@@ -71,6 +76,18 @@
                 else $this->query .= "`".$field."` = '".$value."' and ";
             }
             $this->query = substr($this->query, 0, -5).' limit 1';
+            return $this;
+        }
+
+        function order($param){
+            $this->query .= "order by ".$param." ";
+            return $this;
+        }
+
+        function limit($param){
+            if($param == 1) $this->answer_type = 'single';
+            else $this->answer_type = 'multiple';
+            $this->query .= "limit ".$param;
             return $this;
         }
 
