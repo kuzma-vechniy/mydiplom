@@ -1,33 +1,47 @@
+
+<? if(current_user()) redirect(page_url('main')) ?>
+
 <html>
     <? $title = 'Регистрация' ?>
     <? template('head', ['title' => $title]); ?>
     <body>
-        <form method="POST">
-            <legend>
+        <div class="wrap wrap__center wrap__vcenter" >
+        <form method="POST" class="form">
+            <legend class="form--legend">
                 Регистрация
             </legend>
-            <fieldset>
-                <ul>
+            <fieldset class="form--fieldset">
+                <ul class="form--message-list">
                     <? foreach($msg->messages() as $message){ ?>
                         <li><?= $message ?></li>
                     <? } ?>
                 </ul>
-                <p>
-                    <label>Email</label>
-                    <input type="text" name="email" value="<?= $_SESSION['vars']['registration']['email'] ?>">
+                <ul class="form--field-list">
+                    <li class="form--field-row">
+                        <label class="form--label">Email</label>
+                        <input class="form--input" type="text" name="email" value="<?= $_SESSION['vars']['registration']['email'] ?>">
+                    </li>
+                    <li class="form--field-row">
+                        <label class="form--label">Пароль</label>
+                        <input class="form--input" type="password" name="password">
+                    </li>
+                    <li class="form--field-row">
+                        <label class="form--label">Подтвердите пароль</label>
+                        <input class="form--input" type="password" name="password_confirmation">
+                    </li>
+                    <li class="form--field-row">
+                        <input class="btn form--button" type="submit">
+                    </li>
+                </ul>
                 </p>
                 <p>
-                    <label>Пароль</label>
-                    <input type="password" name="password">
+                    
                 </p>
                 <p>
-                    <label>Подтверждение пароля</label>
-                    <input type="password" name="password_confirmation">
-                </p>
-                <p>
-                    <input type="submit">
+                    
                 </p>
             </fieldset>
         </form>
+        </div>
     </body>
 </html>
