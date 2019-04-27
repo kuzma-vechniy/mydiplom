@@ -1,4 +1,4 @@
-<? $categories = $db->from('categories')->where(['category_id' => null])->execute()->result(); ?>
+<? $categories = $db->from('categories')->where(['category_id' => '0'])->execute()->result(); ?>
 
 <html>
     <? $title = 'Главная' ?>

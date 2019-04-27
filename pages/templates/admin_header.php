@@ -8,4 +8,7 @@
     <li>
         <a href="<?= page_url('admin_brands') ?>">Брэнды</a>
     </li>
+    <li>
+        <a href="<?= page_url('admin_categories') ?>">Категории</a>
+    </li>
 </ul>
