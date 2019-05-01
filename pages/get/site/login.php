@@ -5,8 +5,8 @@
     <? $title = 'Вход' ?>
     <? template('head', ['title' => $title]); ?>
     <body>
-        <div class="wrap wrap__center wrap__vcenter" >
-        <form method="POST" class="form">
+        <div class="wrap wrap__full wrap__center wrap__vcenter" >
+        <form method="POST" class="form form__border">
             <legend class="form--legend">
                 Вход
             </legend>

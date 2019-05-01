@@ -12,3 +12,6 @@ padding-bottom:15px;
     margin: auto;
     
 }
+.row__space-between{
+    justify-content: space-between;
+}

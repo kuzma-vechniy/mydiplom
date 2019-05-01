@@ -12,7 +12,7 @@
         <? template('header'); ?>
 
 <main>
-    <section class="row row__wrapped">
+    <section class="row row__wrapped row__space-between">
         <aside class="category row--item">
             <h2 class="category--title">
                 Категории
@@ -40,14 +40,47 @@
                 <? } ?>            
             </ul>     
         </aside>
-        <article>
-            
-        </article>
-        <article>
-
-        </article>        
+        <div class="col">
+            <article>
+                <img src="css/img/slider/slide1.png" class="slider">
+            </article>
+                <form class="form form__inline">
+                    <ul class="form--field-list">
+                        <li class="form--field">
+                            <label class="form--label">
+                                Сортировать: 
+                            </label>
+                            <select class="form--select">
+                                <option>по возрастанию цены</option>
+                                <option>по убыванию цены</option>
+                            </select>
+                        </li>
+                        <li class="form--field">
+                            <label class="form--label">
+                                Сортировать: 
+                            </label>
+                            <select class="form--select">
+                                <option>по возрастанию цены</option>
+                                <option>по убыванию цены</option>
+                            </select>
+                        </li>
+                        <li class="form--field">
+                            <label class="form--label">
+                                Сортировать: 
+                            </label>
+                            <select class="form--select">
+                                <option>по возрастанию цены</option>
+                                <option>по убыванию цены</option>
+                            </select>
+                        </li>
+                        
+                    </ul>
+                </form>
+        </div>        
     </section>
-
+    <section class="wrap">
+        <
+    </section>
 </main>
 
     </body>
