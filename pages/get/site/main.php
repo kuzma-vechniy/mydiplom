@@ -256,6 +256,30 @@
             </ul>
         </article>
     </section>
+    <article class="feedback">
+        <div class="feedback--content">
+            <h2 class="feedback--title">Остались вопросы?</h2>
+            <span class="feedback--text">Оставьте свой E-mail и мы обязательно свяжемся с вами! :)</span>
+        </div>
+        <form class="form feedback--form">
+            <fieldset class="form--fieldset">
+                <ul class="form--field-list">
+                    <li class="form--field-row">
+                        <input class="form--input" type="text" placeholder="Ваше имя">
+                    </li>
+                    <li class="form--field-row">
+                        <input type="text" class="form--input" placeholder="Ваш e-mail">
+                    </li>
+                    <li class="form--field-row">
+                        <textarea class="form--textarea" rows=7 placeholder="Текст сообщения"></textarea>
+                    </li>
+                    <li class="form--field-row">
+                        <input type="submit" class="form--button form--button__dark" value="Отправить">
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </article>
 </main>
 
     </body>
