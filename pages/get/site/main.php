@@ -11,8 +11,8 @@
     <body>
         <? template('header'); ?>
 
-<main>
-    <section class="row row__wrapped row__space-between">
+<main class="wrap wrap__fixed">
+    <section class="row row__space-between">
         <aside class="category row--item">
             <h2 class="category--title">
                 Категории
@@ -78,8 +78,109 @@
                 </form>
         </div>        
     </section>
-    <section class="wrap">
-        <
+    <section class="col">
+        <article class="content">
+            <h2 class="content--title">
+                Популярное
+            </h2>
+            <ul class="content--list">
+                <li class="content--item">
+                    <article class="product">
+                        <img class="product--image" src="css/img/product.png">
+                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
+                        <span class="product--price">2000 руб.</span>
+                        <div class="product--buttons">
+                            <input type="button" value="В корзину" class="product--button">
+                            <a href="#"><img src="css/img/cards.png"class="product--card"></a>
+                        </div>
+                    </article>
+                </li>
+                <li class="content--item">
+                    <article class="product">
+                        <img class="product--image" src="css/img/product.png">
+                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
+                        <span class="product--price">2000 руб.</span>
+                        <div class="product--buttons">
+                            <input type="button" value="В корзину" class="product--button">
+                            <img src="css/img/cards.png"class="product--card">
+                        </div>
+                    </article>
+                </li>
+                <li class="content--item">
+                    <article class="product">
+                        <img class="product--image" src="css/img/product.png">
+                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
+                        <span class="product--price">2000 руб.</span>
+                        <div class="product--buttons">
+                            <input type="button" value="В корзину" class="product--button">
+                            <img src="css/img/cards.png"class="product--card">
+                        </div>
+                    </article>
+                </li>
+                <li class="content--item">
+                    <article class="product">
+                        <img class="product--image" src="css/img/product.png">
+                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
+                        <span class="product--price">2000 руб.</span>
+                        <div class="product--buttons">
+                            <input type="button" value="В корзину" class="product--button">
+                            <img src="css/img/cards.png"class="product--card">
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </article>
+        <article class="content">
+            <h2 class="content--title">
+                Популярное
+            </h2>
+            <ul class="content--list">
+                <li class="content--item">
+                    <article class="product">
+                        <img class="product--image" src="css/img/product.png">
+                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
+                        <span class="product--price">2000 руб.</span>
+                        <div class="product--buttons">
+                            <input type="button" value="В корзину" class="product--button">
+                            <a href="#"><img src="css/img/cards.png"class="product--card"></a>
+                        </div>
+                    </article>
+                </li>
+                <li class="content--item">
+                    <article class="product">
+                        <img class="product--image" src="css/img/product.png">
+                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
+                        <span class="product--price">2000 руб.</span>
+                        <div class="product--buttons">
+                            <input type="button" value="В корзину" class="product--button">
+                            <img src="css/img/cards.png"class="product--card">
+                        </div>
+                    </article>
+                </li>
+                <li class="content--item">
+                    <article class="product">
+                        <img class="product--image" src="css/img/product.png">
+                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
+                        <span class="product--price">2000 руб.</span>
+                        <div class="product--buttons">
+                            <input type="button" value="В корзину" class="product--button">
+                            <img src="css/img/cards.png"class="product--card">
+                        </div>
+                    </article>
+                </li>
+                <li class="content--item">
+                    <article class="product">
+                        <img class="product--image" src="css/img/product.png">
+                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
+                        <span class="product--price">2000 руб.</span>
+                        <div class="product--buttons">
+                            <input type="button" value="В корзину" class="product--button">
+                            <img src="css/img/cards.png"class="product--card">
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </article>
     </section>
 </main>
 

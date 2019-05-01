@@ -1,5 +1,6 @@
 .wrap{
     display: flex;
+    flex-direction: column;
 }
 .wrap__full{
     width: 100vw;
@@ -12,4 +13,8 @@
 }
 .wrap__vcenter{
     align-items: center;
+}
+.wrap__fixed{
+    width:1000px;
+    margin: auto;
 }

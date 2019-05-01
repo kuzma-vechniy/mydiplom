@@ -1,8 +1,9 @@
 .row{
+width: 100%;
 display: flex;
 flex-direction: row;
 padding-top:15px;
-padding-bottom:15px;
+
 }
 .row--item{
 

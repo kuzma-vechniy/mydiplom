@@ -1,0 +1,16 @@
+.content{
+    width: 100%;
+    padding-top:15px; 
+}
+.content--list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type:none;
+}
+.content--title{
+    font-family: "Roboto";
+    font-weight: 400;
+    color: #444;
+    padding-bottom: 15px; 
+}
