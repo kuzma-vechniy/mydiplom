@@ -181,6 +181,54 @@
                 </li>
             </ul>
         </article>
+        <article class="content">
+            <h2 class="content--title">Новости</h2>
+            <ul class="content--list">
+                <li class="content--item">
+
+                    <article class="news">
+                        <header class="news--header">
+                            <img src="css/img/calendar.png" class="news--image">
+                            <span class="news--date">22/11/2018</span>
+                        </header>
+                        <main class="news--main">
+                            <h3 class="news--title">Дизайн скоро будет готов</h3>
+                            <p class="news--text">
+                                Задача организации, в особенности же рамки
+                                и место обучения кадров представляет собой интересный
+                                эксперимент проверки системы обучения кадров, соответствует
+                                насущным потребностям.
+                            </p>
+                        </main>
+                        <footer class="news--footer">
+                            <a href="#" class="news--link">Узнать больше  ↓</a>
+                        </footer>
+                    </article>
+                </li>
+                    <li class="content--item">
+
+    <article class="news">
+        <header class="news--header">
+            <img src="css/img/calendar.png" class="news--image">
+            <span class="news--date">22/11/2018</span>
+        </header>
+        <main class="news--main">
+            <h3 class="news--title">Дизайн скоро будет готов</h3>
+            <p class="news--text">
+                Задача организации, в особенности же рамки
+                и место обучения кадров представляет собой интересный
+                эксперимент проверки системы обучения кадров, соответствует
+                насущным потребностям.
+            </p>
+        </main>
+        <footer class="news--footer">
+            <a href="#" class="news--link">Узнать больше  ↓</a>
+        </footer>
+    </article>
+    </li>
+            </ul>
+
+        </article>
     </section>
 </main>
 
