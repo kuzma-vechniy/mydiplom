@@ -281,6 +281,6 @@
         </form>
     </article>
 </main>
-
+<? template('footer'); ?>
     </body>
 </html>
