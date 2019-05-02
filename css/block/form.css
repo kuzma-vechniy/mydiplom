@@ -7,6 +7,16 @@
 }
 .form__inline{
     width: 100%;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.form__inline .form--field-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.form__inline .form--field{
+    flex: 0;
 }
 .form__border{
     padding: 20px;

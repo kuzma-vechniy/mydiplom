@@ -49,9 +49,144 @@
                         </li>
                         
                     </ul>
-                </li>          
+                </li>      
+                    
             </ul>     
         </aside>
+    <div class="col col__fixed row--item">
+                <form class="form form__inline">
+                    <ul class="form--field-list">
+                        <li class="form--field">
+                            <label class="form--label">
+                                Сортировать: 
+                            </label>
+                            <select class="form--select">
+                                <option>по возрастанию цены</option>
+                                <option>по убыванию цены</option>
+                            </select>
+                        </li>
+                        <li class="form--field">
+                            <label class="form--label">
+                                Сортировать: 
+                            </label>
+                            <select class="form--select">
+                                <option>по возрастанию цены</option>
+                                <option>по убыванию цены</option>
+                            </select>
+                        </li>
+                        <li class="form--field">
+                            <label class="form--label">
+                                Сортировать: 
+                            </label>
+                            <select class="form--select">
+                                <option>по возрастанию цены</option>
+                                <option>по убыванию цены</option>
+                            </select>
+                        </li>
+                        
+                    </ul>
+                </form>
+                <section class="wrap wrap__wraped">
+
+                <article class="product product__wide">
+                        <img class="product--image" src="css/img/product.png">
+                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
+                        <span class="product--description">
+                             13.3", IPS,
+                             Intel Core i5 8250U 1.6ГГц, 8Гб, 256Гб SSD,
+                             Intel UHD Graphics 620, Windows 10,
+                             81BV007KRU, серый
+                            </span>
+                            <span class="product--line"></span>
+                        <span class="product--price">35000 руб.</span>
+                        <div class="product--buttons">
+                            <input type="button" value="В корзину" class="product--button">
+                            <a href="#"><img src="css/img/cards.png"class="product--card"></a>
+                        </div>
+                    </article>
+                    <article class="product product__wide">
+                        <img class="product--image" src="css/img/product.png">
+                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
+                        <span class="product--description">
+                             13.3", IPS,
+                             Intel Core i5 8250U 1.6ГГц, 8Гб, 256Гб SSD,
+                             Intel UHD Graphics 620, Windows 10,
+                             81BV007KRU, серый
+                            </span>
+                            <span class="product--line"></span>
+                        <span class="product--price">35000 руб.</span>
+                        <div class="product--buttons">
+                            <input type="button" value="В корзину" class="product--button">
+                            <a href="#"><img src="css/img/cards.png"class="product--card"></a>
+                        </div>
+                    </article>
+                    <article class="product product__wide">
+                        <img class="product--image" src="css/img/product.png">
+                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
+                        <span class="product--description">
+                             13.3", IPS,
+                             Intel Core i5 8250U 1.6ГГц, 8Гб, 256Гб SSD,
+                             Intel UHD Graphics 620, Windows 10,
+                             81BV007KRU, серый
+                            </span>
+                            <span class="product--line"></span>
+                        <span class="product--price">35000 руб.</span>
+                        <div class="product--buttons">
+                            <input type="button" value="В корзину" class="product--button">
+                            <a href="#"><img src="css/img/cards.png"class="product--card"></a>
+                        </div>
+                    </article>
+                    <article class="product product__wide">
+                        <img class="product--image" src="css/img/product.png">
+                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
+                        <span class="product--description">
+                             13.3", IPS,
+                             Intel Core i5 8250U 1.6ГГц, 8Гб, 256Гб SSD,
+                             Intel UHD Graphics 620, Windows 10,
+                             81BV007KRU, серый
+                            </span>
+                            <span class="product--line"></span>
+                        <span class="product--price">35000 руб.</span>
+                        <div class="product--buttons">
+                            <input type="button" value="В корзину" class="product--button">
+                            <a href="#"><img src="css/img/cards.png"class="product--card"></a>
+                        </div>
+                    </article>
+                    <article class="product product__wide">
+                        <img class="product--image" src="css/img/product.png">
+                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
+                        <span class="product--description">
+                             13.3", IPS,
+                             Intel Core i5 8250U 1.6ГГц, 8Гб, 256Гб SSD,
+                             Intel UHD Graphics 620, Windows 10,
+                             81BV007KRU, серый
+                            </span>
+                            <span class="product--line"></span>
+                        <span class="product--price">35000 руб.</span>
+                        <div class="product--buttons">
+                            <input type="button" value="В корзину" class="product--button">
+                            <a href="#"><img src="css/img/cards.png"class="product--card"></a>
+                        </div>
+                    </article>
+                    <article class="product product__wide">
+                        <img class="product--image" src="css/img/product.png">
+                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
+                        <span class="product--description">
+                             13.3", IPS,
+                             Intel Core i5 8250U 1.6ГГц, 8Гб, 256Гб SSD,
+                             Intel UHD Graphics 620, Windows 10,
+                             81BV007KRU, серый
+                            </span>
+                            <span class="product--line"></span>
+                        <span class="product--price">35000 руб.</span>
+                        <div class="product--buttons">
+                            <input type="button" value="В корзину" class="product--button">
+                            <a href="#"><img src="css/img/cards.png"class="product--card"></a>
+                        </div>
+                    </article>
+                <a href="#" class="btn"> Показать ещё </a>
+                </section>
+    </div>
 </section>
 </main>
 

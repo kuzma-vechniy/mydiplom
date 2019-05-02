@@ -1,6 +1,8 @@
 .wrap{
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
+    box-sizing: border-box;
 }
 .wrap__full{
     width: 100vw;
@@ -13,6 +15,11 @@
 }
 .wrap__vcenter{
     align-items: center;
+}
+.wrap__wraped{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .wrap__fixed{
     width:1000px;

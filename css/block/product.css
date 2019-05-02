@@ -13,6 +13,10 @@
     box-sizing:border-box;
     padding-bottom: 20px;
 }
+.product__wide{
+    width:250px;
+    margin-bottom: 30px;
+}
 .product--item{
 
 }
@@ -47,4 +51,16 @@
 }
 .product-card{
     cursor: pointer;
+}
+.product--line{
+    height:1px;
+    box-sizing: border-box;
+    width:70%;
+    background-color: #c3c3c3;
+    margin-top:15px;
+    margin-bottom:10px;
+}
+.product--description{
+    font-size:12px;
+    font-weight: 100;
 }
