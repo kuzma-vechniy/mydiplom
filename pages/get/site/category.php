@@ -12,6 +12,56 @@
     <body>
         <? template('header'); ?>
     </body>
+    <main class="wrap wrap__fixed">
+    <section class="row row__space-between">
+    <aside class="category row--item">
+            <h2 class="category--title">
+                Фильтры
+            </h2>
+            <ul class="category--list">
+                <li class="category--block">
+                    <h3 class="category--subtitle">
+                        Цена
+                    </h3>
+                    <div class="row">
+                        <input type="number" placeholder="от" class="category--price-input">
+                        <input type="number" placeholder="до" class="category--price-input">
+                    </div>
+                </li> 
+                <li class="category--block category--block__border">
+                    <h3 class="category--subtitle">Производитель</h3>
+                    <ul class="category--list">
+                        <li class="category--item">
+                            <input type="checkbox" class="category--checkbox">
+                            <label class="category--label">Asus</label>
+                        </li>
+                        <li class="category--item">
+                            <input type="checkbox" class="category--checkbox">
+                            <label class="category--label">Asus</label>
+                        </li>
+                        <li class="category--item">
+                            <input type="checkbox" class="category--checkbox">
+                            <label class="category--label">Asus</label>
+                        </li>
+                        <li class="category--item">
+                            <input type="checkbox" class="category--checkbox">
+                            <label class="category--label">Asus</label>
+                        </li>
+                        
+                    </ul>
+                </li>          
+            </ul>     
+        </aside>
+</section>
+</main>
+
+
+
+
+
+
+
+
     <ul>
         <? foreach($products as $product){ ?>
         <li>
@@ -21,4 +71,5 @@
         </li>
         <? } ?>
     </ul>
+    <? template('footer'); ?>
 </html>
