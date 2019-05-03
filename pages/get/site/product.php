@@ -16,15 +16,36 @@
             $users[$user->id] = $user;
     }
 
-    $builds = $db->from('builds')->whhere(['product_id' => $product->id])->execute()->result();
+    $builds = $db->from('builds')->where(['product_id' => $product->id])->execute()->result();
     $title = $product->name ?>
     
 <html>
     <? template('head', ['title' => $title]); ?>
     <body>
         <? template('header'); ?>
+        <main class="wrap wrap__fixed">
+            <section class="content">
+            <h2 class="content--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h2>
+            <div class="row">
+                <div class="col">
+                    <a href="http://localhost/css/img/item-photo.png" target="frame"><img src="css/img/item-photo.png" class="image image__small"></a>
+                    <a href="http://localhost/css/img/item-photo.png" target="frame"><img src="css/img/item-photo.png" class="image image__small"></a>
+                    <a href="http://localhost/css/img/item-photo.png" target="frame"><img src="css/img/item-photo.png" class="image image__small"></a>
+                </div>
+    <iframe name="frame" class="image image__large">
+
+    </iframe>
+    <article class="col col__border">
+        <h3 class="content--title">Цена: 35400 ₽</h3>
+        <span class="text">Этот товар еще никто не оценил</span>
+        <span class="text">🚛 Доставка: завтра (500 ₽)</span>
+        <input type="button" value ="🛒 В корзину" class="button button__primary">
+
+    </article>
+            </div>
+            </section>
+
+        </main>
+        <? template('footer'); ?>
     </body>
-    <ul>
-        
-    </ul>
 </html>
