@@ -25,3 +25,10 @@
     width:1000px;
     margin: auto;
 }
+
+.wrap__fixed-small{
+    width:1000px;
+    margin: auto;
+    padding-right: 200px;
+    box-sizing: border-box;
+}

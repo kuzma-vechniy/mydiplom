@@ -3,7 +3,7 @@
     <? template('head', ['title' => $title]); ?>
     <body>
         <? template('header'); ?>
-        <main class="wrap wrap__fixed">
+        <main class="wrap wrap__fixed-small">
         <article class="content ">
             <h2 class="content--title">Корзина</h2>
             <table class="table">
@@ -45,10 +45,19 @@
                 </tbody>
             </table>
             <h2 class="content--title">Есть купон?</h2>
-            <form class="form">
-                <label class="form--label">Ввести код</label>
-                <input type="text" class="form--input">;
+            <form class="form form__full-size" >
+                <div class="form--field-row">
+                    <label class="form--label">Ввести код</label>
+                    <div class="row">
+                        <input type="text" class="form--input form--input__var2 form--input__large">
+                        <input type="button" class="button button__small" value="Применить">
+                    </div>
+                </div>
             </form>
+            <div class="row row__padding-top row__space-between">
+                <a href="#" class="button button__small">Вернуться в каталог</a>
+                <input type="submit" class="button button__small button__primary" value="Оформить заказ">
+            </div>
         </article>
         
         </main>

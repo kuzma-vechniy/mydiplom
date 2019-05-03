@@ -8,9 +8,30 @@
     border-radius: 3px;
     width: 210px;
     text-align: center;
+    background-color: #fff;
+    cursor: pointer;
 }
+
 
 .button:hover{
     border: 1px solid #aaa;
     color: #444;
+}
+
+.button__small{
+    padding: 5px 10px;
+    width: 150px;
+    font-size: 12px;
+}
+
+.button__primary{
+    color: white;
+    border: 0;
+    background: #E89A48;
+}
+
+.button__primary:hover{
+    border: 0;
+    color: white;
+    background: #F8aA58;
 }
