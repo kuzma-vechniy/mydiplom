@@ -15,3 +15,7 @@ flex-direction: row;
 .row__space-between{
     justify-content: space-between;
 }
+
+.row__space-around{
+    justify-content: space-around;
+}

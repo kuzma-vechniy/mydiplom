@@ -44,38 +44,6 @@
             <article>
                 <img src="css/img/slider/slide1.png" class="slider">
             </article>
-                <form class="form form__inline">
-                    <ul class="form--field-list">
-                        <li class="form--field">
-                            <label class="form--label">
-                                Сортировать: 
-                            </label>
-                            <select class="form--select">
-                                <option>по возрастанию цены</option>
-                                <option>по убыванию цены</option>
-                            </select>
-                        </li>
-                        <li class="form--field">
-                            <label class="form--label">
-                                Сортировать: 
-                            </label>
-                            <select class="form--select">
-                                <option>по возрастанию цены</option>
-                                <option>по убыванию цены</option>
-                            </select>
-                        </li>
-                        <li class="form--field">
-                            <label class="form--label">
-                                Сортировать: 
-                            </label>
-                            <select class="form--select">
-                                <option>по возрастанию цены</option>
-                                <option>по убыванию цены</option>
-                            </select>
-                        </li>
-                        
-                    </ul>
-                </form>
         </div>        
     </section>
     <section class="col">

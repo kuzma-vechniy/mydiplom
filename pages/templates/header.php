@@ -25,7 +25,12 @@
                 </li>
             <? } ?>
             <li class="navigation--item">
-                <span class="navigation--text">Корзина пуста</span>
+                <!-- <span class="navigation--text">Корзина пуста</span> -->
+                <a href="<?= page_url('basket'); ?>" class="navigation--link"> 
+                🛒 На сумму: 
+                <span>36700</span>
+                </a>
+                
             </li>
         </ul>
     </nav>

@@ -184,7 +184,9 @@
                             <a href="#"><img src="css/img/cards.png"class="product--card"></a>
                         </div>
                     </article>
-                <a href="#" class="btn"> Показать ещё </a>
+                    <div class="row row__space-around">
+                        <a href="#" class="button"> Показать ещё </a>
+                    </div>
                 </section>
     </div>
 </section>

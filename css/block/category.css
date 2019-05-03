@@ -41,6 +41,11 @@
     padding-bottom: 5px;
     padding-top: 5px;
 }
+.category--label{
+    display: inline-block;
+    cursor: pointer;
+    width: 150px;
+}
 .category--item{
     padding-top:5px;
     padding-bottom: 5px;
