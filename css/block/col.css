@@ -8,3 +8,6 @@
 .col__fixed{
     width: 780px;
 }
+.col__left{
+    align-items: flex-start;
+}
