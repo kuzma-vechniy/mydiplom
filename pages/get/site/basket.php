@@ -29,7 +29,7 @@
                         <td>
                         <div class="col col__left">
                             <input type="number" class="table--input-number">
-                            <a href="#" class="table--link">Удалить</a>
+                            <a href="#" class="table--link">🗑 Удалить</a>
                         </div>
                         </td>
                         <td>
@@ -55,7 +55,7 @@
                 </div>
             </form>
             <div class="row row__padding-top row__space-between">
-                <a href="#" class="button button__small">Вернуться в каталог</a>
+                <a href="#" class="button button__small">⬅ Вернуться в каталог</a>
                 <input type="submit" class="button button__small button__primary" value="Оформить заказ">
             </div>
         </article>

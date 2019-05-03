@@ -50,7 +50,21 @@
                         
                     </ul>
                 </li>      
-                    
+
+                <li class="category--block category--block__border">
+                    <ul class="category--list">
+                        <li class="category--item">
+                            <input type="checkbox" class="category--checkbox">
+                            <label class="category--label">Популярное</label>
+                        </li>
+                        <li class="category--item">
+                            <input type="checkbox" class="category--checkbox">
+                            <label class="category--label">Есть скидка</label>
+                        </li>
+                        
+                    </ul>
+                </li>     
+
             </ul>     
         </aside>
     <div class="col col__fixed row--item">
@@ -67,20 +81,19 @@
                         </li>
                         <li class="form--field">
                             <label class="form--label">
-                                Сортировать: 
+                                Группировать: 
                             </label>
                             <select class="form--select">
-                                <option>по возрастанию цены</option>
-                                <option>по убыванию цены</option>
+                                <option>без группировки</option>
+                                <option>сначала акции</option>
                             </select>
                         </li>
                         <li class="form--field">
                             <label class="form--label">
-                                Сортировать: 
+                                Наличие
                             </label>
                             <select class="form--select">
-                                <option>по возрастанию цены</option>
-                                <option>по убыванию цены</option>
+                                <option>есть в наличии</option>
                             </select>
                         </li>
                         

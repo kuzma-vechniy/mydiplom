@@ -19,11 +19,11 @@
                 <ul class="form--field-list">
                     <li class="form--field-row">
                         <label class="form--label">Email</label>
-                        <input class="form--input" type="text" name="email" value="<?= $_SESSION['vars']['registration']['email'] ?>">
+                        <input class="form--input form--input__full" type="text" name="email" value="<?= $_SESSION['vars']['registration']['email'] ?>">
                     </li>
                     <li class="form--field-row">
                         <label class="form--label">Пароль</label>
-                        <input class="form--input" type="password" name="password">
+                        <input class="form--input form--input__full" type="password" name="password">
                     </li>
                     <li class="form--field-row">
                         <input class="btn form--button" type="submit">

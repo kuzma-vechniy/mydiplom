@@ -48,7 +48,7 @@
     </section>
     <section class="col">
         <article class="content">
-            <h2 class="content--title">
+            <h2 class="content--title" id="popular">
                 Популярное
             </h2>
             <ul class="content--list">
@@ -99,8 +99,8 @@
             </ul>
         </article>
         <article class="content">
-            <h2 class="content--title">
-                Популярное
+            <h2 class="content--title" id="actions">
+                Акции
             </h2>
             <ul class="content--list">
                 <li class="content--item">
@@ -150,7 +150,7 @@
             </ul>
         </article>
         <article class="content">
-            <h2 class="content--title">Новости</h2>
+            <h2 class="content--title" id="news">Новости</h2>
             <ul class="content--list">
                 <li class="content--item">
 
@@ -198,7 +198,7 @@
         </article>
 
         <article class="content">
-            <h2 class="content--title">Доставка</h2>
+            <h2 class="content--title" id="delivery">Доставка и оплата</h2>
             <p class="content--text">
                 Закажите сейчас — заберите в удобном для Вас магазине или пункте выдачи заказа. 
             </p>
@@ -233,16 +233,16 @@
             <fieldset class="form--fieldset">
                 <ul class="form--field-list">
                     <li class="form--field-row">
-                        <input class="form--input" type="text" placeholder="Ваше имя">
+                        <input class="form--input form--input__full" type="text" placeholder="Ваше имя">
                     </li>
                     <li class="form--field-row">
-                        <input type="text" class="form--input" placeholder="Ваш e-mail">
+                        <input type="text" class="form--input form--input__full" placeholder="Ваш e-mail">
                     </li>
                     <li class="form--field-row">
-                        <textarea class="form--textarea" rows=7 placeholder="Текст сообщения"></textarea>
+                        <textarea class="form--textarea form--input__full" rows=7 placeholder="Текст сообщения"></textarea>
                     </li>
                     <li class="form--field-row">
-                        <input type="submit" class="form--button form--button__dark" value="Отправить">
+                        <input type="submit" class="form--button form--button__dark" value="Отправить  ✉">
                     </li>
                 </ul>
             </fieldset>

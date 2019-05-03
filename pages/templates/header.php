@@ -37,16 +37,16 @@
     <nav class="navigation header--navigation navigation__dark">
         <ul class="navigation--list">
             <li class="navigation--item">
-                <a href="<?= page_url('popular'); ?>"  class="navigation--link" >Популярное</a> 
+                <a href="#popular" class="navigation--link" >Популярное</a> 
             </li>
             <li class="navigation--item">
-                <a href="<?= page_url('discounts'); ?>"  class="navigation--link">Акции</a>
+                <a href="#actions" class="navigation--link">Акции</a>
             </li>
             <li class="navigation--item">
-                <a href="<?= page_url('news'); ?>"  class="navigation--link">Новости</a>
+                <a href="#news" class="navigation--link">Новости</a>
             </li>
             <li class="navigation--item">
-                <a href="<?= page_url('delivery'); ?>"  class="navigation--link">Доставка и оплата</a>
+                <a href="#delivery" class="navigation--link">Доставка и оплата</a>
             </li>
             <li class="navigation--item">
                 <form class="search-form" method="GET" action="<?= page_url('main'); ?>">

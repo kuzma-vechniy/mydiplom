@@ -70,7 +70,9 @@
     background: #F3F3F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+.form--input__full{
+    width:100%;
+}
 .form--input__large{
     width: 350px;
     margin-right: 50px;
