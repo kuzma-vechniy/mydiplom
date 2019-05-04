@@ -63,9 +63,44 @@ Free DOS
     </pre>
 </div>
 </section>
-    <section class="content">
-        <h2 class="content--title">Отзывы</h2>
-
+    <section class="comments wrap wrap__fixed-small">
+        <h2 class="comments--title">Отзывы</h2>
+    <ul class="comments--list">
+        <li class="comments--element">
+            <article class="comments--card">
+                <span class="comments--name ">Иннокентий</span>
+                <span class="comments--rate ">⭐⭐⭐⭐⭐</span>
+                <span class="comments--use-life ">Срок использования:</span>
+                <span class="comments--sub-use-life">менее месяца</span>
+                <span class="comments--date">30 ноября 2005г. 16:35</span>
+            </article>
+            <article class="comments--content">
+                <span class="comments--article">Достоинства</span>
+                <span class="comments--sub">Китай</span>
+                <span class="comments--article">Недостатки</span>
+                <span class="comments--sub">Китай(((</span>
+                <span class="comments--article">Комментарий</span>
+                <span class="comments--sub">Я уже не знаю кому верить и что покупать уйду в лес</span>
+            </article>
+        </li>
+        <li class="comments--element">
+            <article class="comments--card">
+                <span class="comments--name ">Иннокентий</span>
+                <span class="comments--rate ">⭐⭐⭐⭐⭐</span>
+                <span class="comments--use-life ">Срок использования</span>
+                <span class="comments--sub-use-life">менее месяца</span>
+                <span class="comments--date">30 ноября 2005г. 16:35</span>
+            </article>
+            <article class="comments--content">
+                <span class="comments--article">Достоинства</span>
+                <span class="comments--sub">Китай</span>
+                <span class="comments--article">Недостатки</span>
+                <span class="comments--sub">Китай(((</span>
+                <span class="comments--article">Комментарий</span>
+                <span class="comments--sub">Я уже не знаю кому верить и что покупать уйду в лес</span>
+            </article>
+        </li>
+    </ul>
     </section>
         </main>
         <? template('footer'); ?>
