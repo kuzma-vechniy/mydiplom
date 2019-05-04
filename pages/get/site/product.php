@@ -44,7 +44,29 @@
     </article>
             </div>
             </section>
+<section class="content">
+    <h2 class="content--title">Описание</h2>
+    <div class="row row__space-around content--text content--text__border">
+    <pre class="content--text content--text__big">
+Экран: 15.6"; 
+разрешение экрана: 1920×1080;
+тип матрицы: TN;
+процессор: Intel Core i5 8250U;
+частота: 1.6 ГГц (3.4 ГГц, в режиме Turbo);
+</pre>
+<pre class="content--text content--text__big">
+память: 8192 Мб, DDR4, 2133 МГц;
+SSD: 256 Гб;
+Intel UHD Graphics 620;
+WiFi; Bluetooth; HDMI; WEB-камера;
+Free DOS
+    </pre>
+</div>
+</section>
+    <section class="content">
+        <h2 class="content--title">Отзывы</h2>
 
+    </section>
         </main>
         <? template('footer'); ?>
     </body>
