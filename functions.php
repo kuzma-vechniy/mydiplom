@@ -69,3 +69,11 @@
         }
         return $result;
     }
+
+    function map($array, $field){
+        $result = [];
+        foreach($array as $element){
+            $result[$element->$field] = $element;
+        }
+        return $result;
+    }

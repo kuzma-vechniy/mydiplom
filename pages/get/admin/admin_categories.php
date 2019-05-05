@@ -2,6 +2,7 @@
     <? $title = 'Категории';
      template('head', ['title' => $title]); 
      $categories = $db->from('categories')->execute()->result();
+     $category_list_by_id = map($categories, 'id');
      ?>
     <body>
         <? template('admin_header'); ?>
@@ -17,7 +18,7 @@
             </thead>
             <tbody>
                 <? foreach($categories as $category){ ?>
-                <? $parent_category = $db->from('categories')->find_by(['id' => $category->category_id])->execute()->result() ?>
+                <? if($category->category_id != 0) $parent_category = $category_list_by_id[$category->category_id];?>
                     <tr>
                         <td><?= $category->id ?></td>
                         <td><?= $category->name ?></td>
