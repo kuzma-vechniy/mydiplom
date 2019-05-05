@@ -22,6 +22,7 @@
 }
 .comments--list{
     list-style: none;
+    padding-bottom: 20px;
 }
 .comments--element{
     align-items: flex-start;
@@ -66,4 +67,28 @@ font-weight: 600;
 
     font-size: 18px;
     padding-bottom: 20px;
+}
+
+.comments--field-list{
+    width: 700px;
+    list-style-type: none;
+}
+.comments--field-list li{
+    width: 600px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.comments--field-list label{
+    width: 200px;
+    display: inline-block;
+}
+.comments--field{
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    width: 250px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 2px;
+padding: 5px;
 }

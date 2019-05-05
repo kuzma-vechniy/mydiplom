@@ -101,7 +101,63 @@ Free DOS
             </article>
         </li>
     </ul>
+
+    <form class="comments--form">
+        <h2 class="comments--title">Написать отзыв</h2>
+        <ul class="comments--field-list">
+            <li>
+                <label>Имя</label>
+                <input class="comments--field" type="text">
+            </li>
+            <li>
+                <label>Оценка</label>
+
+            
+
+<div id="reviewStars-input">
+    <input id="star-4" type="radio" name="reviewStars"/>
+    <label title="gorgeous" for="star-4"></label>
+
+    <input id="star-3" type="radio" name="reviewStars"/>
+    <label title="good" for="star-3"></label>
+
+    <input id="star-2" type="radio" name="reviewStars"/>
+    <label title="regular" for="star-2"></label>
+
+    <input id="star-1" type="radio" name="reviewStars"/>
+    <label title="poor" for="star-1"></label>
+
+    <input id="star-0" type="radio" name="reviewStars"/>
+    <label title="bad" for="star-0"></label>
+</div>
+
+
+
+
+
+            </li>
+            <li>
+                <label>Достоинства</label>
+                <textarea class="comments--field" rows=10></textarea>
+
+            </li>
+            <li>
+                <label>Недостатки</label>
+                <textarea class="comments--field" rows=10></textarea>
+            </li>
+            <li>
+                <label>Комментарий</label>
+                <textarea class="comments--field" rows=10></textarea>
+                
+            </li>
+            <li>
+                <label></label>
+                <input type="submit" class="button button__small button__primary">
+            </li>
+        </ul>
+    </form>
     </section>
+
         </main>
         <? template('footer'); ?>
     </body>
