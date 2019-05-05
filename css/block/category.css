@@ -1,0 +1,94 @@
+.category{
+    width: 200px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    position: relative;
+    font-family: "Roboto";
+    color:#555; 
+    align-self: flex-start;
+}
+.category--title{
+    display: block;
+    width: 100%;
+    background-color: #E89A48;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 16px;
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+}
+.category--block{
+    padding-left: 20px;
+    box-sizing: border-box;
+    padding-bottom:20px;
+}
+.category--subtitle{
+    font-family: "Roboto";
+    font-size: 16px;
+    display: block;
+    font-family: "Roboto";
+    font-size: 18px;
+    color: #AAA;
+    font-weight: 100;
+    padding-top:15px;
+}
+.category--list{
+    background: #fff;
+    list-style: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.category--label{
+    display: inline-block;
+    cursor: pointer;
+    width: 150px;
+}
+.category--item{
+    padding-top:5px;
+    padding-bottom: 5px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+}
+
+.category--item:hover .category__sub{
+    display: block;
+}
+
+.category--link{
+    text-decoration: none;
+    color: #444;
+    font-family:"Roboto";
+    width: 100%;
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+
+}
+.category--item:hover{
+    color: #000;
+    background-color: #f9f9f9;
+}
+
+.category__sub{
+    display: none;
+    position: absolute;
+    left: 200px;
+    top: 40px;
+}
+.category--price-input{
+    width:65px;
+    height: 30px;
+    margin-right: 20px;
+    border: 1px solid #AAAAAA;
+    box-sizing: border-box;
+    padding:5px;
+    border-radius: 5px;
+}
+.category--block__border{
+    border-top:1px solid #AAA;
+}

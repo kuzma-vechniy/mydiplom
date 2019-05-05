@@ -14,7 +14,9 @@
             'registration' => [$GUEST],
             'login' => [$GUEST],
             'admin_edit_brand' => [$ADMIN],
-            'admin_new_brand' => [$ADMIN]
+            'admin_new_brand' => [$ADMIN],
+            'admin_edit_category' => [$ADMIN],
+            'admin_new_category' => [$ADMIN]
         ],
         'get' => [
             'main' => [$GUEST, $USER, $ADMIN],
@@ -39,7 +41,11 @@
             'admin_questions' => [$ADMIN],
             'admin_users' => [$ADMIN],
             'admin_edit_brand' => [$ADMIN],
-            'admin_new_brand' => [$ADMIN]
+            'admin_new_brand' => [$ADMIN],
+            'admin_delete_brand' => [$ADMIN],
+            'admin_edit_category' => [$ADMIN],
+            'admin_new_category' => [$ADMIN],
+            'admin_delete_category' => [$ADMIN]
         ]
     ];
 

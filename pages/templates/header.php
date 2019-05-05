@@ -1,50 +1,57 @@
 
-<header>
-    <nav>
-        <ul>
-            <li>
-                <img>
-            </li>
-            <li>
+<header class="header">
+    <nav class="navigation header--navigation">
+        <ul class="navigation--list">
+            <li class="navigation--item">
+                <a href="<?= page_url('main') ?>">
+                <img src="css/img/logo.png" class="navigation--img">
+                </a>
+            </li class="navigation--item">
+            <li class="navigation--item">
             <? if (current_user()){ ?>
-                    <span> <?= current_user()->email ?></span>
-                    <a href="<?= page_url('logout'); ?>">Выход</a>
+                    <span class="navigation--text"> <?= current_user()->email ?></span>
+                    <a class="navigation--link" href="<?= page_url('logout'); ?>">Выход</a>
                 <? } else { ?>
-                    <a href="<?= page_url('login'); ?>" >Вход</a>
-                    <a href="<?= page_url('registration'); ?>">Регистрация</a>
+                    <a class="navigation--link" href="<?= page_url('login'); ?>" >Вход</a>
+                    <a class="navigation--link" href="<?= page_url('registration'); ?>">Регистрация</a>
                 <? } ?>
             </li>
-            <li>
-                <a href="<?= page_url('help'); ?>">Помощь</a>
+            <li class="navigation--item">
+                <a class="navigation--link" href="<?= page_url('help'); ?>">Помощь</a>
             </li>
             <? if(user_type() == get_constant('ADMIN')){ ?>
-                <li>
-                    <a href="<?= page_url('admin_main'); ?>">Админка</a>
+                <li class="navigation--item">
+                    <a class="navigation--link" href="<?= page_url('admin_main'); ?>">Админка</a>
                 </li>
             <? } ?>
-            <li>
-                <span>Корзина пуста</span>
+            <li class="navigation--item">
+                <!-- <span class="navigation--text">Корзина пуста</span> -->
+                <a href="<?= page_url('basket'); ?>" class="navigation--link"> 
+                🛒 На сумму: 
+                <span>36700</span>
+                </a>
+                
             </li>
         </ul>
     </nav>
-    <nav>
-        <ul>
-            <li>
-                <a href="<?= page_url('popular'); ?>">Популярное</a> 
+    <nav class="navigation header--navigation navigation__dark">
+        <ul class="navigation--list">
+            <li class="navigation--item">
+                <a href="#popular" class="navigation--link" >Популярное</a> 
             </li>
-            <li>
-                <a href="<?= page_url('discounts'); ?>">Акции</a>
+            <li class="navigation--item">
+                <a href="#actions" class="navigation--link">Акции</a>
             </li>
-            <li>
-                <a href="<?= page_url('news'); ?>">Новости</a>
+            <li class="navigation--item">
+                <a href="#news" class="navigation--link">Новости</a>
             </li>
-            <li>
-                <a href="<?= page_url('delivery'); ?>">Доставка и оплата</a>
+            <li class="navigation--item">
+                <a href="#delivery" class="navigation--link">Доставка и оплата</a>
             </li>
-            <li>
-                <form method="GET" action="<?= page_url('main'); ?>">
-                    <input type="text" name="search">
-                    <input type="submit">
+            <li class="navigation--item">
+                <form class="search-form" method="GET" action="<?= page_url('main'); ?>">
+                    <input placeholder="Что вы хотите найти?" class="search-form--input" type="text" name="search">
+                    <input class="search-form--button" type="image" src="https://im0-tub-ru.yandex.net/i?id=4200ea30294815e51a4e6fc757043c2a&n=13">
                 </form>
             </li>
         </ul>

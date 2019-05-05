@@ -5,6 +5,7 @@
      ?>
     <body>
         <? template('admin_header'); ?>
+        <a href="<?= page_url('admin_new_brand') ?>">New</a>
         <table>
             <thead>
                 <tr>
@@ -21,6 +22,9 @@
                         <td>
                             <a href="<?= page_url('admin_edit_brand', ['brand_id' => $brand->id]) ?>">
                                 Edit
+                            </a>
+                            <a href="<?= page_url('admin_delete_brand', ['brand_id' => $brand->id]) ?>" data-confirm="Are you sure?">
+                                Delete
                             </a>
                         </td>
                     </tr>

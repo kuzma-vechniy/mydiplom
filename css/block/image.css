@@ -1,0 +1,11 @@
+.image{
+    margin: 10px;
+}
+.image__small{
+    height: 100px;
+    width: 160px;
+}
+.image__large{
+    width: 510px;
+    height: 340px;
+}

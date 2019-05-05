@@ -1,0 +1,36 @@
+.button{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    border: 1px solid #ccc;
+    color: #999;
+    border-radius: 3px;
+    width: 210px;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+.button:hover{
+    border: 1px solid #aaa;
+    color: #444;
+}
+
+.button__small{
+    padding: 5px 10px;
+    width: 150px;
+    font-size: 12px;
+}
+
+.button__primary{
+    color: white;
+    border: 0;
+    background: #E89A48;
+}
+
+.button__primary:hover{
+    border: 0;
+    color: white;
+    background: #F8aA58;
+}

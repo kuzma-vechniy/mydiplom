@@ -1,0 +1,25 @@
+.row{
+width: 100%;
+display: flex;
+flex-direction: row;
+
+}
+
+.row__padding-top{
+    padding-top: 20px;
+}
+.row--item{
+
+}
+.row__wrapped{
+    width:1000px;
+    margin: auto;
+    
+}
+.row__space-between{
+    justify-content: space-between;
+}
+
+.row__space-around{
+    justify-content: space-around;
+}

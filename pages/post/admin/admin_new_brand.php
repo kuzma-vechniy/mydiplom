@@ -1,14 +1,18 @@
-<?  if (isset($_GET['brand_id'])) $brand = $db->from('brands')->find_by(['id' => $_GET['brand_id']])->execute()->result();
-    if (!isset($brand) || $brand == null || !isset($_POST['name'])) {redirect(page_url('admin_edit_brand', ['brand_id' => $brand->id])); exit(); } ?>
+<? 
+    if (!isset($_POST['name'])) {redirect(page_url('admin_new_brand')); exit(); } ?>
 
     <?
 
-        $brand = $db->insert('brands')->params(
+        $db->insert('brands')->params(
             [
                 'name' => $_POST['name']
             
             ]
         )->execute()->result();
-
-        redirect(page_url('admin_edit_brand', ['brand_id' => $brand->id]));
+        $brand = $db->from('brands')->order('id desc')->limit(1)->execute()->result();
+        if( $brand->name === $_POST['name'] ){
+            redirect(page_url('admin_brands'));
+        }else{
+            redirect(page_url('admin_new_brand'));
+        }
     ?>
