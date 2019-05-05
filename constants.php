@@ -23,6 +23,7 @@
             'category' => [$GUEST, $USER, $ADMIN],
             'basket' =>[$GUEST, $USER, $ADMIN],
             'registration' => [$GUEST],
+            'privacy' => [$GUEST, $USER, $ADMIN],
             'login' => [$GUEST],
             'product' => [$GUEST, $USER, $ADMIN],
             'help' => [$GUEST, $USER, $ADMIN],

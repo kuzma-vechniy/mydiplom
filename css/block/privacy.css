@@ -1,0 +1,16 @@
+.privacy{
+    width: 100%;
+    margin:25px; 
+    font-family: "Roboto";
+    display: block;
+    width:1200px;
+}
+.privacy--title{
+    font-weight: 400;
+    color: #444;
+    padding-bottom: 5px; 
+}
+.privacy--text{
+    display: block;
+    width:1000px;
+}
