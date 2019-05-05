@@ -4,8 +4,12 @@
 
 <?  $categories = $db->from('categories')->where(['category_id' => $category->id])->execute()->result();
     $products = $db->from('products')->where(['category_id' => isolate($categories, 'id')])->execute()->result();
+    if($products == []) $products = $db->from('products')->where(['category_id' => $_GET['category_id']])->execute()->result();
     $brands = $db->from('brands')->where(['id' => isolate($products, 'brand_id')])->execute()->result();
-    $title = $category->name ?>
+    $title = $category->name;
+    ?>
+
+    
     
 <html>
     <? template('head', ['title' => $title]); ?>
@@ -31,22 +35,12 @@
                 <li class="category--block category--block__border">
                     <h3 class="category--subtitle">Производитель</h3>
                     <ul class="category--list">
+                        <? foreach($brands as $brand){?>
                         <li class="category--item">
                             <input type="checkbox" class="category--checkbox">
-                            <label class="category--label">Asus</label>
+                            <label class="category--label"><?= $brand->name?></label>
                         </li>
-                        <li class="category--item">
-                            <input type="checkbox" class="category--checkbox">
-                            <label class="category--label">Asus</label>
-                        </li>
-                        <li class="category--item">
-                            <input type="checkbox" class="category--checkbox">
-                            <label class="category--label">Asus</label>
-                        </li>
-                        <li class="category--item">
-                            <input type="checkbox" class="category--checkbox">
-                            <label class="category--label">Asus</label>
-                        </li>
+                        <? } ?>
                         
                     </ul>
                 </li>      
@@ -100,103 +94,24 @@
                     </ul>
                 </form>
                 <section class="wrap wrap__wraped">
-
+                <? foreach($products as $product){ ?>
                 <article class="product product__wide">
                         <img class="product--image" src="css/img/product.png">
-                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
+                        <h3 class="product--title">
+                        <a href="<?= page_url('product', ['product_id' => $product->id]); ?>">
+                        <?= $product->name ?></h3>
+                        </a>
                         <span class="product--description">
-                             13.3", IPS,
-                             Intel Core i5 8250U 1.6ГГц, 8Гб, 256Гб SSD,
-                             Intel UHD Graphics 620, Windows 10,
-                             81BV007KRU, серый
+                        <?= $product->small_description ?>
                             </span>
                             <span class="product--line"></span>
-                        <span class="product--price">35000 руб.</span>
+                        <span class="product--price"><?= $product->price ?> руб.</span>
                         <div class="product--buttons">
                             <input type="button" value="В корзину" class="product--button">
                             <a href="#"><img src="css/img/cards.png"class="product--card"></a>
                         </div>
                     </article>
-                    <article class="product product__wide">
-                        <img class="product--image" src="css/img/product.png">
-                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
-                        <span class="product--description">
-                             13.3", IPS,
-                             Intel Core i5 8250U 1.6ГГц, 8Гб, 256Гб SSD,
-                             Intel UHD Graphics 620, Windows 10,
-                             81BV007KRU, серый
-                            </span>
-                            <span class="product--line"></span>
-                        <span class="product--price">35000 руб.</span>
-                        <div class="product--buttons">
-                            <input type="button" value="В корзину" class="product--button">
-                            <a href="#"><img src="css/img/cards.png"class="product--card"></a>
-                        </div>
-                    </article>
-                    <article class="product product__wide">
-                        <img class="product--image" src="css/img/product.png">
-                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
-                        <span class="product--description">
-                             13.3", IPS,
-                             Intel Core i5 8250U 1.6ГГц, 8Гб, 256Гб SSD,
-                             Intel UHD Graphics 620, Windows 10,
-                             81BV007KRU, серый
-                            </span>
-                            <span class="product--line"></span>
-                        <span class="product--price">35000 руб.</span>
-                        <div class="product--buttons">
-                            <input type="button" value="В корзину" class="product--button">
-                            <a href="#"><img src="css/img/cards.png"class="product--card"></a>
-                        </div>
-                    </article>
-                    <article class="product product__wide">
-                        <img class="product--image" src="css/img/product.png">
-                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
-                        <span class="product--description">
-                             13.3", IPS,
-                             Intel Core i5 8250U 1.6ГГц, 8Гб, 256Гб SSD,
-                             Intel UHD Graphics 620, Windows 10,
-                             81BV007KRU, серый
-                            </span>
-                            <span class="product--line"></span>
-                        <span class="product--price">35000 руб.</span>
-                        <div class="product--buttons">
-                            <input type="button" value="В корзину" class="product--button">
-                            <a href="#"><img src="css/img/cards.png"class="product--card"></a>
-                        </div>
-                    </article>
-                    <article class="product product__wide">
-                        <img class="product--image" src="css/img/product.png">
-                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
-                        <span class="product--description">
-                             13.3", IPS,
-                             Intel Core i5 8250U 1.6ГГц, 8Гб, 256Гб SSD,
-                             Intel UHD Graphics 620, Windows 10,
-                             81BV007KRU, серый
-                            </span>
-                            <span class="product--line"></span>
-                        <span class="product--price">35000 руб.</span>
-                        <div class="product--buttons">
-                            <input type="button" value="В корзину" class="product--button">
-                            <a href="#"><img src="css/img/cards.png"class="product--card"></a>
-                        </div>
-                    </article>
-                    <article class="product product__wide">
-                        <img class="product--image" src="css/img/product.png">
-                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
-                        <span class="product--description">
-                             13.3", IPS,
-                             Intel Core i5 8250U 1.6ГГц, 8Гб, 256Гб SSD,
-                             Intel UHD Graphics 620, Windows 10,
-                             81BV007KRU, серый
-                            </span>
-                            <span class="product--line"></span>
-                        <span class="product--price">35000 руб.</span>
-                        <div class="product--buttons">
-                            <input type="button" value="В корзину" class="product--button">
-                            <a href="#"><img src="css/img/cards.png"class="product--card"></a>
-                        </div>
-                    </article>
+                <? } ?>
                     <div class="row row__space-around">
                         <a href="#" class="button"> Показать ещё </a>
                     </div>
@@ -204,22 +119,5 @@
     </div>
 </section>
 </main>
-
-
-
-
-
-
-
-
-    <ul>
-        <? foreach($products as $product){ ?>
-        <li>
-            <a href="<?= page_url('product', ['product_id' => $product->id]) ?>">
-                <?= $product->name ?>
-            </a>
-        </li>
-        <? } ?>
-    </ul>
     <? template('footer'); ?>
 </html>
