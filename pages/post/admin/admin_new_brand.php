@@ -1,7 +1,5 @@
 <? 
-    if (!isset($_POST['name'])) {redirect(page_url('admin_new_brand')); exit(); } ?>
-
-    <?
+    if (!isset($_POST['name'])) {redirect(page_url('admin_new_brand')); exit(); }
 
         $db->insert('brands')->params(
             [
@@ -15,4 +13,3 @@
         }else{
             redirect(page_url('admin_new_brand'));
         }
-    ?>

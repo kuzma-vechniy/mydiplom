@@ -20,4 +20,3 @@
         }else{
             redirect(page_url('admin_new_product'));
         }
-    ?>

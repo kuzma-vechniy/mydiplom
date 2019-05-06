@@ -15,4 +15,3 @@
 
         if( $db->from('categories')->find_by(['id' => $category->id])->execute()->result()->name === $_POST['name']) redirect(page_url('admin_categories'));
         else redirect(page_url('admin_edit_category', ['category_id' => $category->id]));
-    ?>
