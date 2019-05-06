@@ -1,3 +1,12 @@
+<? $product_array = explode(',',$_COOKIE['products']);
+$backet_array = [];
+$products_by_id = map($db->from('products')->execute()->result(), 'id');
+foreach($product_array as $product_info){
+    $product_info_array = explode(':', $product_info);
+    $backet_array[$product_info_array[0]] = ['product' => $products_by_id[$product_info_array[0]], 'count' => $product_info_array[1]];
+}
+?>
+
 <html>
     <? $title = 'Корзина' ?>
     <? template('head', ['title' => $title]); ?>
@@ -16,31 +25,37 @@
                 </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td> <img src="css/img/product.png"></td>
-                        <td>
-                        <div class="col col__left">
-                            <span class="table--text-primary">
-                                Ноутбук LENOVO IdeaPad 330-15IKBR
-                            </span>
-                            <span class="table--text-bold">35400 ₽</span>
-                        </div>
-                        </td>
-                        <td>
-                        <div class="col col__left">
-                            <input type="number" class="table--input-number">
-                            <a href="#" class="table--link">🗑 Удалить</a>
-                        </div>
-                        </td>
-                        <td>
-                            <span>35400 ₽</span>
-                        </td>
-                    </tr>
+                <? $amount = 0; ?>
+                    <? foreach($backet_array as $backet_info){ 
+                        $product = $backet_info['product'];
+                        $amount += $product->price * $backet_info['count'];
+                        ?>
+                        <tr>
+                            <td> <img src="css/img/product.png"></td>
+                            <td>
+                            <div class="col col__left">
+                                <span class="table--text-primary">
+                                    <?= $product->name ?>
+                                </span>
+                                <span class="table--text-bold"><?= $product->price ?> ₽</span>
+                            </div>
+                            </td>
+                            <td>
+                            <div class="col col__left">
+                                <input type="number" value="<?= $backet_info['count'] ?>" class="table--input-number">
+                                <a href="#" class="table--link">🗑 Удалить</a>
+                            </div>
+                            </td>
+                            <td>
+                                <span><?= $product->price * $backet_info['count'] ?> ₽</span>
+                            </td>
+                        </tr>
+                    <? } ?>
                     <tr class="table--head">
                         <td></td>
                         <td></td>
                         <td><span>Общая стоимость вашего заказа:</span></td>
-                        <td><span>35400 ₽</span></td>
+                        <td><span><?= $amount ?> ₽</span></td>
                     </tr>
                 </tbody>
             </table>
