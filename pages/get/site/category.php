@@ -106,7 +106,7 @@
                             <span class="product--line"></span>
                         <span class="product--price"><?= $product->price ?> руб.</span>
                         <div class="product--buttons">
-                            <input type="button" value="В корзину" class="product--button">
+                            <input type="button" onclick="addToBascket(<?= $product->id ?>,<?= $product->price ?>)" value="В корзину" class="product--button">
                             <a href="#"><img src="css/img/cards.png"class="product--card"></a>
                         </div>
                     </article>
