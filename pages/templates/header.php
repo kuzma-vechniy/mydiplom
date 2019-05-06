@@ -1,3 +1,17 @@
+<? 
+global $db;
+$product_array = explode(',',$_COOKIE['products']);
+$backet_array = [];
+$products_by_id = map($db->from('products')->execute()->result(), 'id');
+$amount = 0;
+foreach($product_array as $product_info){
+    if($product_info != ''){
+    $product_info_array = explode(':', $product_info);
+    $amount += (int)$products_by_id[$product_info_array[0]]->price * (int)$product_info_array[1];
+    }
+}
+?>
+
 <header class="header">
     <nav class="navigation header--navigation">
         <ul class="navigation--list">
@@ -27,7 +41,7 @@
                 <!-- <span class="navigation--text">Корзина пуста</span> -->
                 <a href="<?= page_url('basket'); ?>" class="navigation--link"> 
                 🛒 На сумму: 
-                <span id="bascet">0</span>
+                <span id="bascet"><?= $amount ?></span>
                 </a>
                 
             </li>
