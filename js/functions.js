@@ -26,3 +26,19 @@ function getCookie(n){
         return "";
     }
 }
+function currentProductCount(params) {
+    total = 0;
+    getCookie('products').split(',').forEach(function(element){
+        if(element.split(':')[0] == params) total += +element.split(':')[1];
+    });
+    return total;
+}
+function changeProductCount(product_id,price, val){
+    deleting_count = currentProductCount(product_id)
+    deleteProductFromCookie(product_id);
+    document.getElementById('bascet').innerHTML = 
+    (+document.getElementById('bascet').innerHTML - +price * +deleting_count)
+    document.getElementById('amount-'+product_id).innerHTML = +price * +val
+    addToBascket(product_id, price ,val)
+    document.getElementById('total').innerHTML = document.getElementById('bascet').innerHTML
+}

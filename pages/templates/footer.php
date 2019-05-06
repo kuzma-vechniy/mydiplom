@@ -8,13 +8,14 @@
             <li class="footer--list-item">
                 <a href="#" class="footer--link">Новости</a>
             </li>
-            <li class="footer--list-item">
-                <a href="#" class="footer--link">Гарантия</a>
-            </li>
         </ul>
     </section>
     <section class="footer--section">
-        <h2 class="footer--title">Помощь</h2>
+        <h2 class="footer--title">
+        <a href="<?= page_url("help") ?>" class="footer--link">
+            Помощь
+        </a>
+        </h2>
         <ul class="footer--list">
             <li class="footer--list-item">
                 <a href="#" class="footer--link">Как оформить заказ</a>

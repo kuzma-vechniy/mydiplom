@@ -49,12 +49,12 @@ foreach($product_array as $product_info){
                             </td>
                             <td>
                             <div class="col col__left">
-                                <input type="number" value="<?= $backet_info['count'] ?>" class="table--input-number">
-                                <a href="#" class="table--link" onClick="deleteFromBasket(<?=$product->id ?>)">🗑 Удалить</a>
+                                <input type="number" onkeyup="changeProductCount(<?= $product->id ?>,<?= $product->price ?> ,this.value)" onclick="changeProductCount(<?= $product->id ?>,<?= $product->price ?> ,this.value)" value="<?= $backet_info['count'] ?>" class="table--input-number">
+                                <a href="#" class="table--link" onclick="deleteFromBasket(<?=$product->id ?>)">🗑 Удалить</a>
                             </div>
                             </td>
                             <td>
-                                <span><?= $product->price * $backet_info['count'] ?> ₽</span>
+                                <span id="amount-<?= $product->id ?>"><?= $product->price * $backet_info['count'] ?></span> ₽
                             </td>
                         </tr>
                     <? } ?>
@@ -62,7 +62,7 @@ foreach($product_array as $product_info){
                         <td></td>
                         <td></td>
                         <td><span>Общая стоимость вашего заказа:</span></td>
-                        <td><span><?= $amount ?> ₽</span></td>
+                        <td><span id="total"><?= $amount ?></span> ₽</td>
                     </tr>
                 </tbody>
             </table>
