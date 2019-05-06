@@ -1,4 +1,3 @@
-
 <header class="header">
     <nav class="navigation header--navigation">
         <ul class="navigation--list">
@@ -28,7 +27,7 @@
                 <!-- <span class="navigation--text">Корзина пуста</span> -->
                 <a href="<?= page_url('basket'); ?>" class="navigation--link"> 
                 🛒 На сумму: 
-                <span>36700</span>
+                <span id="bascet">0</span>
                 </a>
                 
             </li>
