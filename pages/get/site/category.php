@@ -1,4 +1,3 @@
-
 <?  if (isset($_GET['category_id'])) $category = $db->from('categories')->find_by(['id' => $_GET['category_id']])->execute()->result();
     if ($category == null) {template('404'); exit(); } ?>
 
@@ -95,7 +94,7 @@
                 </form>
                 <section class="wrap wrap__wraped">
                 <? foreach($products as $product){ ?>
-                <article class="product product__wide">
+                <article class="product product__wide" id="product-<?= $product->id ?>">
                         <img class="product--image" src="css/img/product.png">
                         <h3 class="product--title">
                         <a href="<?= page_url('product', ['product_id' => $product->id]); ?>">

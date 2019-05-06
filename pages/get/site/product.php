@@ -1,4 +1,3 @@
-
 <?  if (isset($_GET['product_id'])) $product = $db->from('products')->find_by(['id' => $_GET['product_id']])->execute()->result();
     if ($product == null) {template('404'); exit(); } ?>
 

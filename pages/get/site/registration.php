@@ -1,4 +1,3 @@
-
 <? if(current_user()) redirect(page_url('main')) ?>
 
 <html>

@@ -17,4 +17,3 @@
 
         if( $db->from('products')->find_by(['id' => $product->id])->execute()->result()->name === $_POST['name']) redirect(page_url('admin_products'));
         else redirect(page_url('admin_edit_product', ['product_id' => $product->id]));
-    ?>
