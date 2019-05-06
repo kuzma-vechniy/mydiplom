@@ -2,8 +2,10 @@
 $backet_array = [];
 $products_by_id = map($db->from('products')->execute()->result(), 'id');
 foreach($product_array as $product_info){
+    if($product_info != ''){
     $product_info_array = explode(':', $product_info);
     $backet_array[$product_info_array[0]] = ['product' => $products_by_id[$product_info_array[0]], 'count' => $product_info_array[1]];
+}
 }
 ?>
 
@@ -43,7 +45,7 @@ foreach($product_array as $product_info){
                             <td>
                             <div class="col col__left">
                                 <input type="number" value="<?= $backet_info['count'] ?>" class="table--input-number">
-                                <a href="#" class="table--link">🗑 Удалить</a>
+                                <a href="#" class="table--link" onClick="deleteFromBasket(<?=$product->id ?>)">🗑 Удалить</a>
                             </div>
                             </td>
                             <td>
