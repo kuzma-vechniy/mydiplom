@@ -18,6 +18,7 @@
                 printf("Connect failed: %s\n", mysqli_connect_error());
                 exit();
             }
+            $this->mysqli->query("SET NAMES 'latin1'");
             $this->query = '';
             $this->ok = true;
         }
