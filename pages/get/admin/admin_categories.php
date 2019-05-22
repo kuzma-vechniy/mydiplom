@@ -18,12 +18,12 @@
             </thead>
             <tbody>
                 <? foreach($categories as $category){ ?>
-                <? if($category->category_id != 0) $parent_category = $category_list_by_id[$category->category_id];?>
+                <? if($category->category_id != 0) $category->category = $category_list_by_id[$category->category_id];?>
                     <tr>
                         <td><?= $category->id ?></td>
                         <td><?= $category->name ?></td>
                         <td>
-                            <? if(isset($parent_category)) echo $parent_category->name ?>
+                            <? if(isset($category->category)) echo $category->category->name ?>
                         </td>
                         <td>
                             <a href="<?= page_url('admin_edit_category', ['category_id' => $category->id]) ?>">
