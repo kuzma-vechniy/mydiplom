@@ -1,9 +1,9 @@
 .help{
     width: 100%;
-    margin:25px; 
+    padding:25px; 
     font-family: "Roboto";
     display: block;
-    width:1200px;
+    box-sizing: border-box;
 }
 .help--title{
     font-weight: 400;
@@ -11,6 +11,4 @@
     padding-bottom: 5px; 
 }
 .help--text{
-    display: block;
-    width:1000px;
 }
