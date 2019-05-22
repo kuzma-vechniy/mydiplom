@@ -22,11 +22,11 @@
                     </li>
                     <li class="form--field-row">
                         <label class="form--label">Фамилия</label>
-                        <input class="form--input form--input__full" type="text" name="email" value="<?= $_SESSION['vars']['registration']['email'] ?>">
+                        <input class="form--input form--input__full" type="text">
                     </li>
                     <li class="form--field-row">
                         <label class="form--label">Имя</label>
-                        <input class="form--input form--input__full" type="text" name="email" value="<?= $_SESSION['vars']['registration']['email'] ?>">
+                        <input class="form--input form--input__full" type="text" >
                     </li>
                     <li class="form--field-row">
                         <label class="form--label">Пароль</label>
