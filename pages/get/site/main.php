@@ -159,6 +159,7 @@
                             <img src="css/img/calendar.png" class="news--image">
                             <span class="news--date">22/11/2018</span>
                         </header>
+                        <input type="checkbox" class="news--check" id="check-news-1" name="check-news-1">
                         <main class="news--main">
                             <h3 class="news--title">Дизайн скоро будет готов</h3>
                             <p class="news--text">
@@ -169,7 +170,8 @@
                             </p>
                         </main>
                         <footer class="news--footer">
-                            <a href="#" class="news--link">Узнать больше  ↓</a>
+                        <label class="news--link news--link__more" for="check-news-1">Узнать больше  ↓</label>
+                        <label class="news--link news--link__less" for="check-news-1">Узнать меньше  ↓</label>
                         </footer>
                     </article>
                 </li>
@@ -180,8 +182,10 @@
             <img src="css/img/calendar.png" class="news--image">
             <span class="news--date">22/11/2018</span>
         </header>
+        <input type="checkbox" class="news--check" id="check-news-2" name="check-news-2">
         <main class="news--main">
             <h3 class="news--title">Дизайн скоро будет готов</h3>
+           
             <p class="news--text">
                 Задача организации, в особенности же рамки
                 и место обучения кадров представляет собой интересный
@@ -190,7 +194,8 @@
             </p>
         </main>
         <footer class="news--footer">
-            <a href="#" class="news--link">Узнать больше  ↓</a>
+            <label class="news--link news--link__more" for="check-news-2">Узнать больше  ↓</label>
+            <label class="news--link news--link__less" for="check-news-2">Узнать меньше  ↓</label>
         </footer>
     </article>
     </li>
