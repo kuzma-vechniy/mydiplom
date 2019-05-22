@@ -8,6 +8,8 @@
     font-family: "Roboto";
     padding-top:20px;
     padding-bottom: 40px;
+    position: absolute;
+    bottom: 0;
 }
 .footer--section{
 }
