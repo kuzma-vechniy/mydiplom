@@ -51,6 +51,7 @@
     padding-bottom: 5px;
     width: 100%;
     display: block;
+    position: relative;
     box-sizing: border-box;
 }
 
@@ -78,7 +79,7 @@
     display: none;
     position: absolute;
     left: 200px;
-    top: 40px;
+    top: 0;
 }
 .category--price-input{
     width:65px;
