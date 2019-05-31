@@ -35,13 +35,13 @@
         <h2 class="footer--title">Мы в соцсетях</h2>
         <ul class="footer--list footer--list__inline">
             <li class="footer--list-item">
-                <a href="#" class="footer--link"><img src="css/img/vk.png" class="footer--icon"></a>
+                <a href="#" alt="vk" class="footer--link"><img src="css/img/vk.png" class="footer--icon"></a>
             </li>
             <li class="footer--list-item">
-                <a href="#" class="footer--link"><img src="css/img/facebook.png" class="footer--icon"></a>
+                <a href="#" alt="facebook" class="footer--link"><img src="css/img/facebook.png" class="footer--icon"></a>
             </li>
             <li class="footer--list-item">
-                <a href="#" class="footer--link"><img src="css/img/instagram.png" class="footer--icon"></a>
+                <a href="#" alt="instagramm" class="footer--link"><img src="css/img/instagram.png" class="footer--icon"></a>
             </li>
         </ul>
     </section>

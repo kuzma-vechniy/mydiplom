@@ -95,7 +95,7 @@
                 <section class="wrap wrap__wraped">
                 <? foreach($products as $product){ ?>
                 <article class="product product__wide" id="product-<?= $product->id ?>">
-                        <img class="product--image" src="<?= $product->img ?>">
+                        <img alt="<?= $product->name ?>" class="product--image" src="<?= $product->img ?>">
                         <h3 class="product--title">
                         <a href="<?= page_url('product', ['product_id' => $product->id]); ?>">
                         <?= $product->name ?></h3>
@@ -107,7 +107,7 @@
                         <span class="product--price"><?= $product->price ?> руб.</span>
                         <div class="product--buttons">
                             <input type="button" onclick="addToBascket(<?= $product->id ?>,<?= $product->price ?>)" value="В корзину" class="product--button">
-                            <a href="#"><img src="css/img/cards.png"class="product--card"></a>
+                            <a href="#"><img alt="Product card" src="css/img/cards.png"class="product--card"></a>
                         </div>
                     </article>
                 <? } ?>

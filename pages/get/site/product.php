@@ -25,7 +25,7 @@
             <section class="content">
             <h2 class="content--title"><?= $product->name ?></h2>
             <div class="row">
-    <img src="<?= $product->img ?>" class="image image__large">
+    <img alt="<?= $product->name ?>" src="<?= $product->img ?>" class="image image__large">
     <article class="col col__border">
         <h3 class="content--title">Цена: <?= $product->price ?> ₽</h3>
         <span class="text">Этот товар еще никто не оценил</span>

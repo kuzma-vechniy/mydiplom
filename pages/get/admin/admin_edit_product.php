@@ -64,7 +64,7 @@
                 </label>
                 <input value="<?= $product->img ?>" type="text" name="img">
             </p>
-            <p><img width=400 src="<?= $product->img ?>"></p>
+            <p><img alt="<?= $product->name ?>" width=400 src="<?= $product->img ?>"></p>
             <input type="submit">
         </form>
     </body>

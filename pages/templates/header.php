@@ -17,7 +17,7 @@ foreach($product_array as $product_info){
         <ul class="navigation--list">
             <li class="navigation--item">
                 <a href="<?= page_url('main') ?>">
-                <img src="css/img/logo.png" class="navigation--img">
+                <img alt="logo" src="css/img/logo.png" class="navigation--img">
                 </a>
             </li class="navigation--item">
             <li class="navigation--item">

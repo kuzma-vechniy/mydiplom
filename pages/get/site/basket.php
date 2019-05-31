@@ -38,7 +38,7 @@ foreach($product_array as $product_info){
                         $amount += $product->price * $backet_info['count'];
                         ?>
                         <tr>
-                            <td> <img width="200" src="<?= $product->img ?>"></td>
+                            <td> <img alt="<?= $product->name ?>" width="200" src="<?= $product->img ?>"></td>
                             <td>
                             <div class="col col__left">
                                 <span class="table--text-primary">
