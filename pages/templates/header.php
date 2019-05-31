@@ -1,6 +1,6 @@
 <? 
 global $db;
-$product_array = explode(',',$_COOKIE['products']);
+isset($_COOKIE['products']) ? $product_array = explode(',',$_COOKIE['products']) : $product_array = [];
 $backet_array = [];
 $products_by_id = map($db->from('products')->execute()->result(), 'id');
 $amount = 0;

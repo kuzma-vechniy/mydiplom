@@ -1,5 +1,5 @@
 <? 
-$product_array = explode(',',$_COOKIE['products']);
+(isset($_COOKIE['products'])) ? $product_array = explode(',',$_COOKIE['products']) : $product_array = [];
 $backet_array = [];
 $products_by_id = map($db->from('products')->execute()->result(), 'id');
 foreach($product_array as $product_info){
@@ -38,7 +38,7 @@ foreach($product_array as $product_info){
                         $amount += $product->price * $backet_info['count'];
                         ?>
                         <tr>
-                            <td> <img src="css/img/product.png"></td>
+                            <td> <img width="200" src="<?= $product->img ?>"></td>
                             <td>
                             <div class="col col__left">
                                 <span class="table--text-primary">

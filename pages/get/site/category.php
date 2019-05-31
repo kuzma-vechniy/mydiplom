@@ -95,7 +95,7 @@
                 <section class="wrap wrap__wraped">
                 <? foreach($products as $product){ ?>
                 <article class="product product__wide" id="product-<?= $product->id ?>">
-                        <img class="product--image" src="css/img/product.png">
+                        <img class="product--image" src="<?= $product->img ?>">
                         <h3 class="product--title">
                         <a href="<?= page_url('product', ['product_id' => $product->id]); ?>">
                         <?= $product->name ?></h3>

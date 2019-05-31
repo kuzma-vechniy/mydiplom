@@ -55,6 +55,12 @@
                 </label>
                 <textarea name="description"></textarea>
             </p>
+            <p>
+                <label>
+                    Изображение
+                </label>
+                <input type="text" name="img">
+            </p>
             <input type="submit">
         </form>
     </body>

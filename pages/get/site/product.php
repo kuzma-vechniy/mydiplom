@@ -15,7 +15,6 @@
             $users[$user->id] = $user;
     }
 
-    $builds = $db->from('builds')->where(['product_id' => $product->id])->execute()->result();
     $title = $product->name ?>
     
 <html>
@@ -26,19 +25,12 @@
             <section class="content">
             <h2 class="content--title"><?= $product->name ?></h2>
             <div class="row">
-                <div class="col">
-                    <a href="http://localhost/css/img/item-photo.png" target="frame"><img src="css/img/item-photo.png" class="image image__small"></a>
-                    <a href="http://localhost/css/img/item-photo.png" target="frame"><img src="css/img/item-photo.png" class="image image__small"></a>
-                    <a href="http://localhost/css/img/item-photo.png" target="frame"><img src="css/img/item-photo.png" class="image image__small"></a>
-                </div>
-    <iframe name="frame" class="image image__large">
-
-    </iframe>
+    <img src="<?= $product->img ?>" class="image image__large">
     <article class="col col__border">
         <h3 class="content--title">Цена: <?= $product->price ?> ₽</h3>
         <span class="text">Этот товар еще никто не оценил</span>
         <span class="text">🚛 Доставка: завтра (500 ₽)</span>
-        <input type="button" value ="🛒 В корзину" class="button button__primary">
+        <input type="button" onclick="addToBascket(<?= $product->id ?>,<?= $product->price ?>)" value="🛒 В корзину" class="button button__primary">
 
     </article>
             </div>
