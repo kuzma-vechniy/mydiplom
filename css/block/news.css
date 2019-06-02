@@ -19,10 +19,7 @@
 .news--main{
     padding-top:15px;
 }
-.news--footer{
-    padding-top:15px;
 
-}
 .news--image{
     width: 35px;
     height: 38px;
@@ -45,25 +42,4 @@
     color:#444;
     cursor: pointer;
 
-}
-.news--check{
-    display: none;
-}
-
-.news--check__more{
-    display: block;
-}
-.news--link__less{
-    display: none;
-}
-.news--check:checked ~ .news--footer .news--link__less{
-    display: block;
-}
-
-.news--check:checked ~ .news--footer .news--link__more{
-    display: none;
-}
-
-.news--check:checked + .news--main{
-    height: 700px;
 }
