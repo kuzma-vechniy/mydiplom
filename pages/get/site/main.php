@@ -1,5 +1,7 @@
 <? $categories = $db->from('categories')->where(['category_id' => '0'])->execute()->result(); ?>
 <? 
+$products = $db->from('products')->order('order_count')->limit(4)->execute()->result();
+
     foreach($categories as $category){
         $category->categories = $db->from('categories')->where(['category_id' => $category->id])->execute()->result();
     }
@@ -57,101 +59,19 @@
                 Популярное
             </h2>
             <ul class="content--list">
-                <li class="content--item">
-                    <article class="product">
-                        <img class="product--image" src="css/img/product.png">
-                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
-                        <span class="product--price">2000 руб.</span>
-                        <div class="product--buttons">
-                            <input type="button" value="В корзину" class="product--button">
-                            <a href="#"><img src="css/img/cards.png"class="product--card"></a>
-                        </div>
-                    </article>
-                </li>
-                <li class="content--item">
-                    <article class="product">
-                        <img class="product--image" src="css/img/product.png">
-                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
-                        <span class="product--price">2000 руб.</span>
-                        <div class="product--buttons">
-                            <input type="button" value="В корзину" class="product--button">
-                            <img src="css/img/cards.png"class="product--card">
-                        </div>
-                    </article>
-                </li>
-                <li class="content--item">
-                    <article class="product">
-                        <img class="product--image" src="css/img/product.png">
-                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
-                        <span class="product--price">2000 руб.</span>
-                        <div class="product--buttons">
-                            <input type="button" value="В корзину" class="product--button">
-                            <img src="css/img/cards.png"class="product--card">
-                        </div>
-                    </article>
-                </li>
-                <li class="content--item">
-                    <article class="product">
-                        <img class="product--image" src="css/img/product.png">
-                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
-                        <span class="product--price">2000 руб.</span>
-                        <div class="product--buttons">
-                            <input type="button" value="В корзину" class="product--button">
-                            <img src="css/img/cards.png"class="product--card">
-                        </div>
-                    </article>
-                </li>
-            </ul>
-        </article>
-        <article class="content">
-            <h2 class="content--title" id="actions">
-                Акции
-            </h2>
-            <ul class="content--list">
-                <li class="content--item">
-                    <article class="product">
-                        <img class="product--image" src="css/img/product.png">
-                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
-                        <span class="product--price">2000 руб.</span>
-                        <div class="product--buttons">
-                            <input type="button" value="В корзину" class="product--button">
-                            <a href="#"><img src="css/img/cards.png"class="product--card"></a>
-                        </div>
-                    </article>
-                </li>
-                <li class="content--item">
-                    <article class="product">
-                        <img class="product--image" src="css/img/product.png">
-                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
-                        <span class="product--price">2000 руб.</span>
-                        <div class="product--buttons">
-                            <input type="button" value="В корзину" class="product--button">
-                            <img src="css/img/cards.png"class="product--card">
-                        </div>
-                    </article>
-                </li>
-                <li class="content--item">
-                    <article class="product">
-                        <img class="product--image" src="css/img/product.png">
-                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
-                        <span class="product--price">2000 руб.</span>
-                        <div class="product--buttons">
-                            <input type="button" value="В корзину" class="product--button">
-                            <img src="css/img/cards.png"class="product--card">
-                        </div>
-                    </article>
-                </li>
-                <li class="content--item">
-                    <article class="product">
-                        <img class="product--image" src="css/img/product.png">
-                        <h3 class="product--title">Ноутбук LENOVO IdeaPad 330-15IKBR</h3>
-                        <span class="product--price">2000 руб.</span>
-                        <div class="product--buttons">
-                            <input type="button" value="В корзину" class="product--button">
-                            <img src="css/img/cards.png"class="product--card">
-                        </div>
-                    </article>
-                </li>
+                <? foreach($products as $product){ ?>
+                    <li class="content--item">
+                        <article class="product">
+                            <img class="product--image" src="<?= $product->img ?>">
+                            <h3 class="product--title"><?= $product->name ?></h3>
+                            <span class="product--price"><?= $product->price ?> руб.</span>
+                            <div class="product--buttons">
+                                <input type="button" onclick="addToBascket(<?= $product->id ?>,<?= $product->price ?>)" value="В корзину" class="product--button">
+                                <a href="#"><img src="css/img/cards.png"class="product--card"></a>
+                            </div>
+                        </article>
+                    </li>
+                <? } ?>
             </ul>
         </article>
         <article class="content">
