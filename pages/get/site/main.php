@@ -41,9 +41,14 @@
             </ul>     
         </aside>
         <div class="col">
-            <article>
-                <img src="css/img/slider/slide1.png" class="slider">
+            <article id="slider" class="slider">
+            <button id="left" class="slider--left" onclick="scrolLeft()">◀</button>
+            <a id="href" href="#">
+            <img src="" alt="" id="image" class="slider--image"> 
+            </a>
+            <button id="right" class="slider--right" onclick="scrolRight()">▶</button>
             </article>
+            <script type="text/javascript" src="js/slider.js"></script>
         </div>        
     </section>
     <section class="col">

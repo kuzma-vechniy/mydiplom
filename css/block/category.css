@@ -6,6 +6,7 @@
     font-family: "Roboto";
     color:#555; 
     align-self: flex-start;
+    z-index: 2;
 }
 .category--title{
     display: block;

@@ -1,3 +1,31 @@
 .slider{
     width: 770px;
+    position: relative;
+    z-index: 1;
+}
+.slider--image{
+    height: 200px;
+    width: 100%;
+}
+.slider--right{
+    z-index: 5;
+    top:40%;
+    right: 15;
+    position: absolute;
+    font-size: 36px;
+    background: 0;
+    color:#fff;
+    border: 0;
+    cursor: pointer;
+}
+.slider--left{
+    z-index: 5;
+    top:40%;
+    left:15px;
+    position: absolute;
+    font-size: 36px;
+    background: 0;
+    color:#fff;
+    border:0;
+    cursor: pointer;
 }
