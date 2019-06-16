@@ -1,8 +1,1 @@
-<html>
-    <? $title = 'Админка' ?>
-    <? template('head', ['title' => $title]); ?>
-    <body>
-        <? template('admin_header'); ?>
-
-    </body>
-</html>
+<? redirect(page_url('admin_products')) ?>

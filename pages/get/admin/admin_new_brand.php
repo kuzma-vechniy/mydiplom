@@ -1,17 +1,17 @@
 <html>
     <? $title = 'Создание брэнда';
-     template('head', ['title' => $title]); 
+     template('admin_head', ['title' => $title]); 
      ?>
     <body>
         <? template('admin_header'); ?>
-        <form method="POST">
-            <p>
-                <label>
-                    Имя
-                </label>
-                <input type="text" name="name">
-            </p>
-            <input type="submit">
-        </form>
+        <div class="container">
+            <form method="POST" class="mt-5">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" placeholder="Enter brand name">
+                </div>
+                <input class="btn btn-primary" value="Добавить" type="submit">
+            </form>
+        </div>
     </body>
 </html>

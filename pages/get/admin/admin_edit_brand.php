@@ -2,18 +2,20 @@
     if (!isset($brand) || $brand == null) {template('404'); exit(); } ?>
 <html>
     <? $title = 'Редактирование брэнда';
-     template('head', ['title' => $title]); 
+     template('admin_head', ['title' => $title]); 
      ?>
     <body>
         <? template('admin_header'); ?>
         <form method="POST">
-            <p>
-                <label>
-                    Имя
-                </label>
-                <input type="text" name="name" value="<?= $brand->name ?>">
-            </p>
-            <input type="submit">
+            <div class="container">
+            <form method="POST" class="mt-5">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" value="<?= $brand->name ?>" class="form-control" name="name" placeholder="Enter brand name">
+                </div>
+                <input class="btn btn-primary" value="Сохранить" type="submit">
+            </form>
+            </div>
         </form>
     </body>
 </html>

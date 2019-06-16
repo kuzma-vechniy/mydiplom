@@ -1,12 +1,13 @@
 <html>
     <? $title = 'Брэнды';
-     template('head', ['title' => $title]); 
+     template('admin_head', ['title' => $title]); 
      $brands = $db->from('brands')->execute()->result();
      ?>
     <body>
         <? template('admin_header'); ?>
-        <a href="<?= page_url('admin_new_brand') ?>">New</a>
-        <table>
+        <div class="container">
+            <a class="btn btn-success mt-4 mb-4" href="<?= page_url('admin_new_brand') ?>">New</a>
+        <table class="table">
             <thead>
                 <tr>
                     <th>Id</th>

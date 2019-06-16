@@ -7,65 +7,69 @@
 
 <html>
     <? $title = 'Редактирование продукта';
-     template('head', ['title' => $title]); 
+     template('admin_head', ['title' => $title]); 
      ?>
     <body>
         <? template('admin_header'); ?>
-        <form method="POST">
-            <p>
-                <label>
-                    Имя
-                </label>
-                <input type="text" name="name" value="<?= $product->name?>">
-            </p>
-            <p>
-                <label>
-                    Цена
-                </label>
-                <input type="text" name="price" value="<?= $product->price?>">
-            </p>
-            <p>
-                <label>
-                    Категория
-                </label>
-                <select name="category_id">
-                    <option value="0">Выберите категорию</option>
-                    <? foreach($selectable_categories as $category){?>
-                        <option <? if($category->id === $product->category_id) echo 'selected'?> value="<?= $category->id ?>"><?= $category->name ?></option>
-                    <? } ?>
-                </select>
-            </p>
-            <p>
-                <label>
-                    Brand
-                </label>
-                <select name="brand_id">
-                    <option value="0">Выберите брэнд</option>
-                    <? foreach($selectable_brands as $brand){?>
-                        <option <? if($brand->id === $product->brand_id) echo 'selected'?> value="<?= $brand->id ?>"><?= $brand->name ?></option>
-                    <? } ?>
-                </select>
-            </p>
-            <p>
-                <label>
-                    Маленькое описание
-                </label>
-                <textarea name="small_description"><?= $product->small_description?></textarea>
-            </p>
-            <p>
-                <label>
-                    Описание
-                </label>
-                <textarea name="description"><?= $product->description?></textarea>
-            </p>
-            <p>
-                <label>
-                    Изображение
-                </label>
-                <input value="<?= $product->img ?>" type="text" name="img">
-            </p>
-            <p><img alt="<?= $product->name ?>" width=400 src="<?= $product->img ?>"></p>
-            <input type="submit">
-        </form>
+        <div class="container">
+            <form method="POST" class="mt-5">
+                <div class="form-group">
+                    <label>
+                        Имя
+                    </label>
+                    <input type="text" class="form-control" name="name" value="<?= $product->name?>">
+                </div>
+                <div class="form-group">
+                    <label>
+                        Цена
+                    </label>
+                    <input type="text" class="form-control" name="price" value="<?= $product->price?>">
+                </div>
+                <div class="form-group">
+                    <label>
+                        Категория
+                    </label>
+                    <select class="form-control" name="category_id">
+                        <option value="0">Выберите категорию</option>
+                        <? foreach($selectable_categories as $category){?>
+                            <option <? if($category->id === $product->category_id) echo 'selected'?> value="<?= $category->id ?>"><?= $category->name ?></option>
+                        <? } ?>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        Brand
+                    </label>
+                    <select class="form-control" name="brand_id">
+                        <option value="0">Выберите брэнд</option>
+                        <? foreach($selectable_brands as $brand){?>
+                            <option <? if($brand->id === $product->brand_id) echo 'selected'?> value="<?= $brand->id ?>"><?= $brand->name ?></option>
+                        <? } ?>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        Маленькое описание
+                    </label>
+                    <textarea class="form-control" name="small_description"><?= $product->small_description?></textarea>
+                </div>
+                <div class="form-group">
+                    <label>
+                        Описание
+                    </label>
+                    <textarea class="form-control" name="description"><?= $product->description?></textarea>
+                </div>
+                <div class="form-group">
+                    <label>
+                        Изображение
+                    </label>
+                    <input class="form-control" value="<?= $product->img ?>" type="text" name="img">
+                </div>
+                <div class="form-group">
+                    <img alt="<?= $product->name ?>" width=400 src="<?= $product->img ?>">
+                </div>
+                <input class="btn btn-primary" value="Сохранить" type="submit">
+            </form>
+        </div>
     </body>
 </html>
