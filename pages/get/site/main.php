@@ -1,6 +1,6 @@
 <? $categories = $db->from('categories')->where(['category_id' => '0'])->execute()->result(); ?>
 <? 
-$products = $db->from('products')->order('order_count')->limit(4)->execute()->result();
+$products = $db->from('products')->order('order_count desc')->limit(4)->execute()->result();
 
     foreach($categories as $category){
         $category->categories = $db->from('categories')->where(['category_id' => $category->id])->execute()->result();
@@ -63,7 +63,11 @@ $products = $db->from('products')->order('order_count')->limit(4)->execute()->re
                     <li class="content--item">
                         <article class="product">
                             <img class="product--image" src="<?= $product->img ?>">
-                            <h3 class="product--title"><?= $product->name ?></h3>
+                            <h3 class="product--title">
+                                <a href="<?= page_url('product', ['product_id' => $product->id]); ?>">
+                                    <?= $product->name ?>
+                                </a>
+                            </h3>
                             <span class="product--price"><?= $product->price ?> руб.</span>
                             <div class="product--buttons">
                                 <input type="button" onclick="addToBascket(<?= $product->id ?>,<?= $product->price ?>)" value="В корзину" class="product--button">

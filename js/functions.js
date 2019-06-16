@@ -42,3 +42,8 @@ function changeProductCount(product_id,price, val){
     addToBascket(product_id, price ,val)
     document.getElementById('total').innerHTML = document.getElementById('bascet').innerHTML
 }
+function confirm_cookie(){
+    //document.cookie = 'confirmcookie=; expires=Thu, 01 Jan 1970 00:00:01 GMT;'; 
+    document.cookie = 'confirmcookie=true'
+    cookie_panel.remove();
+}

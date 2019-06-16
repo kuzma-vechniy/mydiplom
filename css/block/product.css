@@ -20,7 +20,9 @@
 .product--item{
 
 }
-.product--title{
+.product--title, .product--title a{
+    height: 50px;
+    text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;

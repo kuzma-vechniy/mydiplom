@@ -41,16 +41,18 @@ foreach($product_array as $product_info){
                             <td> <img alt="<?= $product->name ?>" width="200" src="<?= $product->img ?>"></td>
                             <td>
                             <div class="col col__left">
+                                <a href="<?= page_url('product', ['product_id' => $product->id]); ?>">
                                 <span class="table--text-primary">
                                     <?= $product->name ?>
                                 </span>
+                                </a>
                                 <span class="table--text-bold"><?= $product->price ?> ₽</span>
                             </div>
                             </td>
                             <td>
                             <div class="col col__left">
                                 <input type="number" onkeyup="changeProductCount(<?= $product->id ?>,<?= $product->price ?> ,this.value)" onclick="changeProductCount(<?= $product->id ?>,<?= $product->price ?> ,this.value)" value="<?= $backet_info['count'] ?>" class="table--input-number">
-                                <a href="#" class="table--link" onclick="deleteFromBasket(<?=$product->id ?>)">🗑 Удалить</a>
+                                <a href="#" class="table--link" onclick="deleteFromBasket(<?=$product->id ?>)">������ Удалить</a>
                             </div>
                             </td>
                             <td>

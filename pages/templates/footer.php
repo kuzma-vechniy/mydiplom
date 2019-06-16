@@ -45,4 +45,10 @@
             </li>
         </ul>
     </section>
+    <? if(!isset($_COOKIE['confirmcookie'])){ ?>
+        <section class="cookie" id="cookie_panel">
+            <span>Этот сайт использует куки-файлы и другие технологии, чтобы помочь вам в навигации, а также предоставить лучший пользовательский опыт, анализировать использование наших продуктов и услуг, повысить качество рекламных и маркетинговых активностей.</span>
+            <input type = "button" onclick="confirm_cookie()" value="Принять" class="cookie--button">
+        </section>
+    <? } ?>
 </footer>

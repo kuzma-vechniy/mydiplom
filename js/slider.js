@@ -5,9 +5,9 @@ class SliderItem {
     }
 }
 let images = [
-    new SliderItem("css/img/slider/slide1.png", "http://localhost/?page=product&product_id=2"),
-    new SliderItem("css/img/slider/computer.png", "http://localhost/?page=product&product_id=3"),
-    new SliderItem("css/img/slider/slide1.png", "http://localhost/?page=product&product_id=4")
+    new SliderItem("css/img/slider/slide3.png", "http://anastasi26.temp.swtest.ru/?page=product&product_id=17"),
+    new SliderItem("css/img/slider/slide2.png", "http://anastasi26.temp.swtest.ru/?page=product&product_id=3"),
+    new SliderItem("css/img/slider/slide1.png", "http://anastasi26.temp.swtest.ru/?page=product&product_id=18")
 ];
 let btnLeft = document.getElementById('left');
 let btnRight = document.getElementById('right');
