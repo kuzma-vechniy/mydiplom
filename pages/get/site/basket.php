@@ -52,7 +52,7 @@ foreach($product_array as $product_info){
                             <td>
                             <div class="col col__left">
                                 <input type="number" onkeyup="changeProductCount(<?= $product->id ?>,<?= $product->price ?> ,this.value)" onclick="changeProductCount(<?= $product->id ?>,<?= $product->price ?> ,this.value)" value="<?= $backet_info['count'] ?>" class="table--input-number">
-                                <a href="#" class="table--link" onclick="deleteFromBasket(<?=$product->id ?>)">������ Удалить</a>
+                                <a href="#" class="table--link" onclick="deleteFromBasket(<?=$product->id ?>)">🗑 Удалить</a>
                             </div>
                             </td>
                             <td>
@@ -79,7 +79,7 @@ foreach($product_array as $product_info){
                 </div>
             </form>
             <div class="row row__padding-top row__space-between">
-                <a href="#" class="button button__small">⬅ Вернуться в каталог</a>
+                <a href="<?= page_url('main') ?>" class="button button__small">⬅ Вернуться на главную</a>
                 <input type="submit" class="button button__small button__primary" value="Оформить заказ">
             </div>
         </article>

@@ -15,3 +15,6 @@ body{
 header main footer body{
     overflow-x: hidden;
 }
+a{
+    text-decoration: none;
+}

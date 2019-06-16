@@ -29,15 +29,12 @@
                         <input class="form--input form--input__full" type="password" name="password_confirmation">
                     </li>
                     <li class="form--field-row">
-                        <div class="row">
-                        <input type="checkbox">
+                        <input class="btn form--button" type="submit" value="Регистрация">
+                    </li>
+                    <div class="row">
                         <span>
-                            Я подтверждаю, что ознакомился с <a href="<?= page_url("privacy") ?>">условиями политики конфеденциальности</a>
-                        </span><div>
-                    </li>
-                    <li class="form--field-row">
-                        <input class="btn form--button" type="submit">
-                    </li>
+                        Нажимая на кнопку «Регистрация», вы соглашаетесь с нашими <a href="<?= page_url("privacy") ?>">политикой конфиденциальности и политикой о куки</a>
+                    </span><div>
                 </ul>
                 </p>
                 <p>
